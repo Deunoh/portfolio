@@ -1,0 +1,58 @@
+
+.card-box {
+    /* background-color: darkslategray; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+.main-container {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden;
+
+    /* pour ie et mozilla */
+    -ms-overlow-style: none;
+    scrollbar-width: none;
+}
+
+.card{
+    height: 85%;
+    width: 85%;
+    border-radius: 30px;
+    box-shadow: 0 0 20px black;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.one {
+    background: #3D5A80;
+}
+.two {
+    background: #3D5A80;
+}
+.three {
+    background: #3D5A80;
+}
+.four {
+    background: #3D5A80;
+}
+
+h1{
+    font-family: 'Crete Round', serif;
+    font-size: 4rem;
+    color: white;
+}
