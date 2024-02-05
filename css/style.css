@@ -13,9 +13,10 @@
 .cards-container {
     display: flex;
     flex-direction: row;
-    width: 400vw;
+    width: 350vw;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
+   background-color: white;
 }
 .main-container {
     width: 100vh;
@@ -24,35 +25,42 @@
     transform-origin: top left;
     overflow-x: hidden;
 
+    /* background-color: red; */
     /* pour ie et mozilla */
     -ms-overlow-style: none;
     scrollbar-width: none;
+  
 }
 
 .card{
+    padding: 1px;
     height: 85%;
     width: 85%;
-    border-radius: 30px;
+    border-radius: 60px;
     box-shadow: 0 0 20px black;
 }
 ::-webkit-scrollbar {
     display: none;
 }
 .one {
-    background: #3D5A80;
+    background: #2A2B2A;
 }
 .two {
-    background: #3D5A80;
+    background: #2A2B2A;
 }
 .three {
-    background: #3D5A80;
+    background: #2A2B2A;
 }
 .four {
-    background: #3D5A80;
+    background: #2A2B2A;
 }
 
 h1{
-    font-family: 'Crete Round', serif;
-    font-size: 4rem;
+    margin: 3rem;
+    font-family: 'Merriweather', serif;
+    /* letter-spacing: 1.2em; */
+    font-size: 1.5em;
     color: white;
+
+  
 }
