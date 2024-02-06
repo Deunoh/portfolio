@@ -1,3 +1,8 @@
+:root {
+    --main-color: #F1FAFD;
+    --title-font: 'Merriweather', serif;
+}
+
 
 .card-box {
     /* background-color: darkslategray; */
@@ -16,7 +21,7 @@
     width: 350vw;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
-   background-color: white;
+   background-color: var(--main-color);
 }
 .main-container {
     width: 100vh;
@@ -25,7 +30,7 @@
     transform-origin: top left;
     overflow-x: hidden;
 
-    /* background-color: red; */
+    background-color: red;
     /* pour ie et mozilla */
     -ms-overlow-style: none;
     scrollbar-width: none;
@@ -43,7 +48,7 @@
     display: none;
 }
 .one {
-    background: #2A2B2A;
+    background: #2A2A28;
 }
 .two {
     background: #2A2B2A;
@@ -56,11 +61,16 @@
 }
 
 h1{
-    margin: 3rem;
-    font-family: 'Merriweather', serif;
+    margin: 3rem 3rem 2rem 3rem;
+    font-family: var(--title-font);
     /* letter-spacing: 1.2em; */
-    font-size: 1.5em;
-    color: white;
-
-  
+    font-size: 6vw;
+    color: var(--main-color);
+}
+h2{
+    margin: 0 3rem;
+    /* line-height: 2rem; */
+    font-family: var(--title-font);
+    font-size: 4vw;
+    color: var(--main-color);
 }
