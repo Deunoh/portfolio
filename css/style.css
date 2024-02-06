@@ -61,15 +61,16 @@
 }
 
 h1{
-    margin: 3rem 3rem 1rem 3rem;
+    margin: 3rem 3rem 2rem 3rem;
     font-family: var(--title-font);
     /* letter-spacing: 1.2em; */
-    font-size: 7vw;
+    font-size: 6vw;
     color: var(--main-color);
 }
 h2{
     margin: 0 3rem;
+    /* line-height: 2rem; */
     font-family: var(--title-font);
-    font-size: 6vw;
+    font-size: 4vw;
     color: var(--main-color);
 }
