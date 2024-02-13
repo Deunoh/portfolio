@@ -5,6 +5,7 @@
 body{
     width: 100vw;
     height: 100vh;
+    color: var(--main-color);
 }
 
 .card-box {
@@ -33,8 +34,6 @@ body{
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
     overflow-x: hidden;
-
-    /* background-color: red; */
     /* pour ie et mozilla */
     -ms-overlow-style: none;
     scrollbar-width: none;
@@ -55,13 +54,15 @@ body{
 .label-fixed{
     position: absolute;
     left: 0;
-    top: 15vw;
+    top: 44vh;
     text-orientation: upright;
     writing-mode: vertical-lr;
+    transform: translateY(-50%);
 }
 .label-fixed p{
+    font-family: var(--title-font);
     color: black;
-    background-color: #f6ff00;
+    background-color: #FFD60A;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 25px;
@@ -140,23 +141,25 @@ body{
 
 .two {
     position: relative;
-    /* background: #2A2B2A; */
+   
 }
 .three {
-    /* background: #2A2B2A; */
+    position: relative;
+   
 }
 .four {
-    /* background: #2A2B2A; */
+    position: relative;
+   
 }
 
-h1{
+header h1{
     margin: 3rem 3rem 2rem 3rem;
     font-family: var(--title-font);
     /* letter-spacing: 1.2em; */
     font-size: 6vw;
     color: var(--main-color);
 }
-h2{
+header h2{
     margin: 0 3rem;
     /* line-height: 2rem; */
     font-family: var(--title-font);
@@ -170,4 +173,43 @@ h2{
     left: 50%;
     font-size: 2rem;
     transform: translate(-50%, -50%);
+}
+.two section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 40%;
+    padding-left: 10%;
+}
+.two h2{
+    font-size: 4vw;
+}
+.two__paragraphe{
+    font-size: 1vw;
+}
+.social-list{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5vw;
+}
+.social-list li{
+    width: 6rem;
+    height: 6rem;
+}
+
+.logo-contact{
+    width: 5rem;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+}
+
+
+
+.cv-img{
+    height: 40vh;
+    position: absolute;
+    right: 16%;
+    top: 44vh;
+    transform: translateY(-50%);
 }
