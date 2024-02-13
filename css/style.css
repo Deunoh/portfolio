@@ -51,6 +51,25 @@ body{
     background-size: cover;
 
 }
+
+.label-fixed{
+    position: absolute;
+    left: 0;
+    top: 15vw;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+}
+.label-fixed p{
+    color: black;
+    background-color: #f6ff00;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 25px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0.5rem;
+   
+}
 ::-webkit-scrollbar {
     display: none;
 }
@@ -75,14 +94,14 @@ body{
     width: 100%;
     height: 200%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-family: var(--title-font);
     color: var(--main-color);
 
 }
 
 .box-techno{
-    height: 15%;
+    height: 16%;
     width: 20%;
     background-color: rgba(100, 100, 100, 0.2);
     -webkit-backdrop-filter: blur(4px);
@@ -90,6 +109,7 @@ body{
     box-shadow: 0 0 2px #F1FAFD;
     border-radius: 25px;
     font-size: 1vw;
+    position: relative;
    
 }
 
@@ -99,6 +119,8 @@ body{
     align-items: flex-start;
     height: 100%;
     margin: 1vh;
+    gap: 1rem;
+    margin: 1rem;
    
 }
 
@@ -106,16 +128,18 @@ body{
     /* margin-left: 33%; */
     display: flex;
     align-items: center;
+    gap: 1.5rem;
 }
 
 
 
 .logo-techno{
-    height: 3vw;
+    height: 2.7vw;
     aspect-ratio: 1/1;
 }
 
 .two {
+    position: relative;
     /* background: #2A2B2A; */
 }
 .three {
@@ -138,4 +162,12 @@ h2{
     font-family: var(--title-font);
     font-size: 4vw;
     color: var(--main-color);
+}
+
+.title-techno{
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
 }
