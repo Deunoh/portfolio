@@ -2,7 +2,10 @@
     --main-color: #F1FAFD;
     --title-font: 'Merriweather', serif;
 }
-
+body{
+    width: 100vw;
+    height: 100vh;
+}
 
 .card-box {
     /* background-color: darkslategray; */
@@ -18,10 +21,11 @@
 .cards-container {
     display: flex;
     flex-direction: row;
-    width: 350vw;
+    width: 370vw;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
    background-color: var(--main-color);
+   
 }
 .main-container {
     width: 100vh;
@@ -30,7 +34,7 @@
     transform-origin: top left;
     overflow-x: hidden;
 
-    background-color: red;
+    /* background-color: red; */
     /* pour ie et mozilla */
     -ms-overlow-style: none;
     scrollbar-width: none;
@@ -40,24 +44,40 @@
 .card{
     padding: 1px;
     height: 85%;
-    width: 85%;
+    width: 93%;
     border-radius: 60px;
     box-shadow: 0 0 20px black;
+    background-image: url("../img/eberhard-grossgasteiger-xC7Ho08RYF4-unsplash.jpg");
+    background-size: cover;
+
 }
 ::-webkit-scrollbar {
     display: none;
 }
+
 .one {
-    background: #2A2A28;
+    margin-left: 3rem;
+    /* background: #2A2A28; */
+    position: relative;
 }
+.one__img__profile{
+    width: 15%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    top: 3rem;
+    right: 9rem;
+    box-shadow: 0 0 10px #F1FAFD;
+}
+
 .two {
-    background: #2A2B2A;
+    /* background: #2A2B2A; */
 }
 .three {
-    background: #2A2B2A;
+    /* background: #2A2B2A; */
 }
 .four {
-    background: #2A2B2A;
+    /* background: #2A2B2A; */
 }
 
 h1{
