@@ -182,8 +182,14 @@ header h2{
     width: 40%;
     padding-left: 10%;
 }
-.two h2{
+
+/* titre des cartes */
+.title-card{
     font-size: 4vw;
+}
+.title-card_without-flex{
+    margin-top: 10vh;
+    margin-left: 8vw;
 }
 .two__paragraphe{
     font-size: 1vw;
