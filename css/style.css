@@ -238,11 +238,11 @@ header h2{
    
     font-size: 3rem;
 }
-/* .contact-text:first-child{
-    padding-bottom: 1rem;
-} */
+
+/* formulaire */
 
 .formulaire-section{
+    font-size: 1.5rem;
     width: 60%;
     display: flex;
     justify-content: center;
@@ -257,5 +257,67 @@ header h2{
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(5px);
     box-shadow: 0 0 2px #F1FAFD;
-   
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+form{
+    width: 80%;
+}
+
+form h2{
+    font-size: 2em;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 2rem 0;
+    width: 95%;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label, input:valid ~ label{
+    top: -6px;
+}
+textarea:focus ~ label, textarea:valid ~ label{
+    top: -13px;
+}
+.inputbox input, textarea{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+
+}
+textarea{
+    height: 80px;
+}
+
+#submit{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.btn-check-form{
+    padding-bottom: 1.5rem;
 }
