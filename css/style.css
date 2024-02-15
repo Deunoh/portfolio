@@ -8,6 +8,7 @@ body{
     color: var(--main-color);
 }
 
+
 .card-box {
     /* background-color: darkslategray; */
     width: 100vw;
@@ -198,7 +199,14 @@ header h2{
     margin-left: 8vw;
 }
 .two__paragraphe{
-    font-size: 1vw;
+    border-radius: 30px;
+    background-color: rgba(100, 100, 100, 0.2);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 2px #F1FAFD;
+    font-size: 1.5rem;
+    padding: 3em;
+
 }
 .social-list{
     display: flex;
@@ -273,7 +281,7 @@ form h2{
     position: relative;
     margin: 2rem 0;
     width: 95%;
-    border-bottom: 2px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 .inputbox label{
     position: absolute;
@@ -316,6 +324,9 @@ textarea{
     cursor: pointer;
     font-size: 1em;
     font-weight: 600;
+}
+#submit:hover{
+    background: #FFD60A;
 }
 
 .btn-check-form{
