@@ -336,9 +336,7 @@ textarea{
 }
 
 /* Troisième carte */
-.left_section_projects{
-    
-}
+
 .projets_paragraphe{
     width: fit-content;
    
@@ -348,4 +346,14 @@ textarea{
 .right_section_projects{
     width: 100%;
     
+}
+.projects-box{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.projects__img{
+    width: 20vw;
 }
