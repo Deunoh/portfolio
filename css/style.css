@@ -357,3 +357,30 @@ textarea{
 .projects__img{
     width: 20vw;
 }
+
+/* Footer */
+
+footer{
+    position: fixed;
+    bottom: 1.5em;
+    left: 39vw;
+    width: fit-content;
+}
+
+footer nav ul{
+    display: flex;
+    gap: 1.5rem;
+}
+footer button {
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    background-color: #535456;
+    border: none;
+    cursor: pointer;
+}
+
+/* classe à ajouter en JS */
+.nav__current-page{
+    background-color: #d9d9d9;
+   
+}
