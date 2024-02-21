@@ -2,7 +2,7 @@
                 <div class="card one">
                     <header>
                         <h1 id="title-name">Denovann Belloir </h1>
-                        <h2>Developpeur web Fullstack.<span id="input-cursor">| </span></h2>
+                        <h2>Developpeur web.<span id="input-cursor">| </span></h2>
                         <img class="one__img__profile" src="img/profil-light.jpeg" alt="photo de denovann">
                     </header>
                     <section class="one__section__techno">
@@ -19,7 +19,6 @@
                             <h3 class="title-techno">Back</h3>
                             <ul>
                                 <li><span><img src="img/php-logo.png" alt="logo html" class="logo-techno"></span>PHP</li>
-                                <li><span><img src="img/Symfony_logo.png" alt="logo html" class="logo-techno"></span>Symfony</li>
                                 <li><span><img src="img/mysql-logo.png" alt="logo html" class="logo-techno"></span>MySQL</li>
                               
                             </ul>

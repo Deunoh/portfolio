@@ -12,7 +12,7 @@
                     </section>
                     <section class="right_section_projects">
                         <div class="projects-box">
-                            <a href="https://github.com/Deunoh/homepage-liegeois" class="img-link"><img src="img/projects/promoliegeois.png" alt="projet promoliegeois" class="projects__img"></a>
+                            <a href="https://github.com/Deunoh/homepage-liegeois" class="img-link" target="_blank"><img src="img/projects/promoliegeois.png" alt="projet promoliegeois" class="projects__img"></a>
                             <a href="#" class="img-link"><img src="img/projects/cv-project.png" alt="cv-site" class="projects__img"></a>
                         </div>
                     </section>

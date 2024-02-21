@@ -15,10 +15,10 @@
                             </div>
                         </section>
                         <aside class="cv-container">
-                            <a href="#" class="img-link">
-                                <span class="cv-text">CV</span>
+                            <a href="#" class="cv-img-link">
                                 <img class="cv-img" src="img/Capture d'écran 2024-02-13 214630.png" alt="CV">
                             </a>
+                            <strong class="cv-text">CV</strong>
                         </aside>  
                 </div>
 </div>
