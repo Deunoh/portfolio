@@ -7,7 +7,7 @@
                     
                     <section class="mid-section">
                         <h2 class="title-card">Projets<span id="input-cursor">|</span></h2> 
-                        <p class="glass__paragraphe projets_paragraphe">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aenim itaque expedita vero tempora quibusdam eum iure quia excepturi, accusamus distinctio iste soluta odit optio? Maxime, eaque architecto corporis voluptatem soluta neque accusantium debitis quis temporibus maiores ex voluptate.</p>
+                        <p class="glass__paragraphe projets_paragraphe">Je partage ici mes projets personnels, promoliegeois.net à été développer avant ma formation pour apprendre les bases de la programmation, il à aussi pour but de centraliser les sites utiles pour les étudiants de l'école O'clock. D'autres projets sont en cours de développement ! </p>
                         <p></p>
                     </section>
                     <section class="right_section_projects">

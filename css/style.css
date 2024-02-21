@@ -18,7 +18,6 @@ body{
     font-size: 100px;
 }
 
-
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -50,6 +49,17 @@ body{
     background-size: cover;
 
 }
+
+.mid-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 40%;
+    padding-left: 10%;
+   
+}
+
 
 .label-fixed{
     position: absolute;
@@ -182,15 +192,6 @@ header h2{
     transform: translate(-50%, -50%);
 }
 
-.mid-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    width: 40%;
-    padding-left: 10%;
-   
-}
 
 /* titre des cartes */
 .title-card{
@@ -231,8 +232,12 @@ header h2{
 }
 
 /* Image cv */
+.two section{
+    width: 50%;
+}
+
 .two aside{
-    width: 60%;
+    width: 50%;
     height: 100%;
     /* background-color: red; */
 }
@@ -374,7 +379,7 @@ textarea{
 }
 
 .right_section_projects{
-    width: 100%;
+    width: 60%;
     
 }
 .projects-box{
