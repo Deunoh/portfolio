@@ -7,11 +7,11 @@ const navigation = {
         navigation.btnFour = document.getElementById('btn__card__4');
 
         //Je selectionne et je stock les breaks points 
-        //Pour la carte 1 
-        navigation.cardOneBreakPoint = document.getElementById('title-name');
-        navigation.cardTwoBreakPoint = document.querySelector('.cv-text');
-        navigation.cardThreeBreakPoint = document.querySelector('.right_section_projects');
-        navigation.cardFourBreakPoint = document.querySelector('.formulaire-section');
+       
+        navigation.cardOneBreakPoint = document.getElementById('un');
+        navigation.cardTwoBreakPoint = document.getElementById('deux');
+        navigation.cardThreeBreakPoint = document.getElementById('trois');
+        navigation.cardFourBreakPoint = document.getElementById('quatre');
 
        navigation.changeColor();
        
@@ -45,7 +45,7 @@ const navigation = {
                }
            }
         }, {
-           threshold: .5
+           threshold: .8
         })
         observer.observe(navigation.cardOneBreakPoint);
         observer.observe(navigation.cardTwoBreakPoint);

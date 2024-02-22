@@ -295,7 +295,7 @@ header h2{
 
 .formulaire-box{
     width: 80%;
-    height: fit-content;
+    height: 90%;
     padding: 1rem;
     border-radius: 25px;
     background-color: rgba(100, 100, 100, 0.2);
@@ -307,6 +307,7 @@ header h2{
     align-items: center; 
 }
 form{
+    height: 100%;
     width: 80%;
 }
 
@@ -322,7 +323,7 @@ form h2{
 }
 .inputbox label{
     position: absolute;
-    top: 50%;
+    top: 42%;
     left: 5px;
     transform: translateY(-50%);
     color: #fff;
@@ -348,7 +349,9 @@ textarea:focus ~ label, textarea:valid ~ label{
 
 }
 textarea{
-    height: 80px;
+    height: 150px;
+    max-height: 150px;
+    resize: none;
 }
 
 #submit{
