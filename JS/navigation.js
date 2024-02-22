@@ -45,6 +45,7 @@ const navigation = {
                }
            }
         }, {
+            //Si l'element occupe au moins 80% de l'écran
            threshold: .8
         })
         observer.observe(navigation.cardOneBreakPoint);

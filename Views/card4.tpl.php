@@ -16,19 +16,19 @@
                                 <h2>Contactez moi !</h2>
                                     <div class="inputbox">
                                         <input type="text" name="nom" required>
-                                        <label for="nom">Nom</label>
+                                        <label for="nom">Nom*</label>
                                     </div>
                                     <div class="inputbox">
-                                        <input type="text" name="entreprise" required>
-                                        <label for="entreprise">Entreprise</label>
+                                        <input type="text" name="prénom" required>
+                                        <label for="prénom">Prénom*</label>
                                     </div>
                                     <div class="inputbox">
                                         <input type="text" name="mail" required>
-                                        <label for="mail">Email</label>
+                                        <label for="mail">Email*</label>
                                     </div>
                                     <div class="inputbox" required>
                                         <textarea name="message" id="message" required ></textarea>
-                                        <label for="message">Votre message</label>
+                                        <label for="message">Votre message*</label>
                                     </div>
                                     <div class="btn-check-form">
                                         <input  type="checkbox" value="" id="copy" name="copy">
