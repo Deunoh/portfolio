@@ -384,6 +384,12 @@ textarea{
 input::placeholder{
     color: #ff0000;
 }
+
+.champs_obligatoires{
+    align-self: flex-end;
+    font-size: 0.8rem;
+    font-style: italic;
+}
 /* Troisième carte */
 
 .projets_paragraphe{

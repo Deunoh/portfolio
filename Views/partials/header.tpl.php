@@ -12,7 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
+    
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/style.css">
 
 </head>

@@ -30,29 +30,32 @@ if(!empty($_POST)){
     // Si aucune erreur n'est détectée, traiter le formulaire (envoi d'email, etc.)
     if(empty($errorList)) {
 
-        //A SUPPRIMER !!!
+        //TODO A SUPPRIMER !!!
        var_dump('envoi du mail');
-       $_POST = [];
+       
     }
 }
 
 ?>
 
 <?php
-        function showErrors($fieldName, $errorList = null) {
-            if(isset($errorList) && !empty($errorList[$fieldName])) {
-                    foreach($errorList[$fieldName] as $error) {
-                        echo $error;
-                    }
-            }
+function showErrors($fieldName, $errorList = null) {
+    $errors = '';
+    if(isset($errorList) && !empty($errorList[$fieldName])) {
+        foreach($errorList[$fieldName] as $error) {
+            $errors .= $error . ' ';
         }
+    }
+    return $errors;
+   
+}
 ?>
 <div class="card-box" id="quatre">
                 <div class="card four">
                     <div class="label-fixed">
                         <h3>Contact</h3>
                     </div>
-                    
+                    <!-- TODO Faire une variable PHP en cas de sucess et remplacer le texte de contact-text -->
                     <section class="mid-section">
                         <h2 class="title-card">Contact<span id="input-cursor">|</span></h2>
                        <p class="contact-text">Vous avez besoin d’obtenir d’autres informations ou de me rencontrer ?</p>
@@ -62,17 +65,17 @@ if(!empty($_POST)){
                     <section class="formulaire-section">
                         <div class="formulaire-box">
                             <form method="post">
-                              
+                              <span class="champs_obligatoires">* champs obligatoires</span>
                                     <div class="inputbox <?= (isset($errorList['name'])) ? 'invalid' : ''; ?>">
-                                    <input type="text" name="name" placeholder="<?php showErrors('name', $errorList); ?>" required>
+                                    <input type="text" name="name" <?php if (!empty($errorList)) { echo 'placeholder="' . showErrors('name', $errorList) . '"';} ?> required>
                                         <label for="nom">Nom*</label>
                                     </div>
                                     <div class="inputbox <?= (isset($errorList['firstname'])) ? 'invalid' : ''; ?>">
-                                        <input type="text" name="firstname" placeholder="<?php showErrors('firstname', $errorList); ?>" required>
+                                        <input type="text" name="firstname" <?php if (!empty($errorList)) { echo 'placeholder="' . showErrors('firstname', $errorList) . '"';} ?> required>
                                         <label for="firstname">Prénom*</label>
                                     </div>
                                     <div class="inputbox <?= (isset($errorList['email'])) ? 'invalid' : ''; ?>">
-                                        <input type="text" name="mail" placeholder="<?php showErrors('email', $errorList); ?>" required>
+                                        <input type="text" name="mail" <?php if (!empty($errorList)) { echo 'placeholder="' . showErrors('email', $errorList) . '"';} ?> required>
                                         <label for="mail">Email*</label>
                                     </div>
                                     <div class="inputbox <?= (isset($errorList['message'])) ? 'invalid' : ''; ?>" required>
@@ -87,6 +90,7 @@ if(!empty($_POST)){
                                     </div>
                                     <button type="submit" id="submit" name="submit">Envoyer</button> 
 
+
                             </form>
                         </div>
                     </section>
@@ -94,4 +98,5 @@ if(!empty($_POST)){
             </div>
 
 
+        
           
