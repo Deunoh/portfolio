@@ -7,7 +7,7 @@
                     
                     <section class="mid-section">
                         <h2 class="title-card">Projets<span id="input-cursor">|</span></h2> 
-                        <p class="glass__paragraphe projets_paragraphe">Je partage ici mes projets personnels, promoliegeois.net à été développer avant ma formation pour apprendre les bases de la programmation, il à aussi pour but de centraliser les sites utiles pour les étudiants de l'école O'clock. D'autres projets sont en cours de développement ! </p>
+                        <p class="glass__paragraphe projets_paragraphe">Je partage ici mes projets personnels, promoliegeois.net à été développer avant ma formation pour apprendre les bases de la programmation, il a aussi pour but de centraliser les sites utiles pour les étudiants de l'école O'clock. D'autres projets sont en cours de développement ! </p>
                         <p></p>
                     </section>
                     <section class="right_section_projects">

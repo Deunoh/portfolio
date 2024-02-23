@@ -6,7 +6,7 @@
         display: none;
     }
     body{
-        background:no-repeat center/50% url(../img/underconstruc.jpg);
+        background:no-repeat center url(../img/underconstruc.jpg);
         background-size: cover;
     }
   }
