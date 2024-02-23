@@ -334,7 +334,7 @@ form h2{
     pointer-events: none;
     transition: .5s;
 }
-input:focus ~ label, input:valid ~ label{
+input:focus ~ label, input:valid ~ label, input:placeholder-shown ~ label {
     top: -6px;
 }
 textarea:focus ~ label, textarea:valid ~ label{
@@ -378,6 +378,10 @@ textarea{
 
 .invalid{
     border-bottom: 1px solid #ff0000;
+    color: #ff0000;
+}
+
+input::placeholder{
     color: #ff0000;
 }
 /* Troisième carte */

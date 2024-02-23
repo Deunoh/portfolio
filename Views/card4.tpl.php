@@ -1,71 +1,42 @@
 <?php
+$errorList = [];
+
 if(!empty($_POST)){
+    $name = isset($_POST['name']) ? htmlspecialchars($_POST['name']) : '';
+    $firstname = isset($_POST['firstname']) ? htmlspecialchars($_POST['firstname']) : '';
+    $email = isset($_POST['mail']) ? htmlspecialchars($_POST['mail']) : '';
+    $message = isset($_POST['message']) ? htmlspecialchars($_POST['message']) : '';
 
-   $errorList = [];
-   $name = "";
-   $firstname = "";
-   $email = "";
-   $message = "";
-   // Je recupère les infos du formulaire
-   if(isset($_POST['name']) && !empty($_POST['name'])){
-      $name = htmlspecialchars($_POST['name']);
-   }
+    // Vérification des données et ajout au tableau d'erreurs
 
-   if(isset($_POST['firstname']) && !empty($_POST['firstname'])){
-      $firstname = htmlspecialchars($_POST['firstname']);
-   }
+    if(empty($name) || strlen($name) < 2 || strlen($name) > 15) {
+        $errorList['name'][] = 'Le nom est invalide';
+    }
 
-   if(isset($_POST['mail']) && !empty($_POST['mail'])){
-      $email = htmlspecialchars($_POST['mail']);
-          // Vérification de la validité de l'email
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $errorList['email'][] = 'E-mail invalide';
-   }
-   // Nettoyage de l'email pour des raisons de sécurité
-   $email = filter_var($email, FILTER_SANITIZE_EMAIL);
-   } else {
-    $errorList['email'][] = 'L\'e-mail est obligatoire';
-   }
+    if(empty($firstname) || strlen($firstname) < 2 || strlen($firstname) > 15) {
+        $errorList['firstname'][] = 'Le prénom est invalide';
+    }
 
-   if(isset($_POST['message']) && !empty($_POST['message'])){
-      $message = htmlspecialchars($_POST['message']);
-   }
+    if(empty($email)) {
+        $errorList['email'][] = 'L\'e-mail est obligatoire';
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errorList['email'][] = 'E-mail invalide';
+    }
 
-   //Verification des données et si besoin a jouter au tableau d'erreur 
+    if(empty($message)) {
+        $errorList['message'][] = 'Le message est obligatoire';
+    }
 
-   //Pour le nom
-   if($name === false || $name === '') {
-   $errorList['name'][] = 'Le nom est invalide et obligatoire';
-   }
+    // Si aucune erreur n'est détectée, traiter le formulaire (envoi d'email, etc.)
+    if(empty($errorList)) {
 
-   if(strlen($name) < 2) {
-      $errorList['name'][] = 'Le nom est trop court';
-   }
-  if(strlen($name) > 15) {
-   $errorList['name'][] = 'Le nom est trop long';
-   }
+        //A SUPPRIMER !!!
+       var_dump('envoi du mail');
+       $_POST = [];
+    }
+}
 
-   //Pour le prénom
-
-   if($firstname === false || $firstname === '') {
-   $errorList['firstname'][] = 'Le prénom est invalide et obligatoire';
-   }
-
-   if(strlen($firstname) < 2) {
-      $errorList['firstname'][] = 'Le prénom est trop court';
-   }
-   if(strlen($firstname) > 15) {
-   $errorList['firstname'][] = 'Le prénom est trop long';
-   }
-
-   //Pour le message 
-   if($message === ''){
-    $errorList['message'][] = 'Le message est obligatoire';
-   }
-
- 
-    
-}; ?>
+?>
 
 <?php
         function showErrors($fieldName, $errorList = null) {
@@ -93,19 +64,19 @@ if(!empty($_POST)){
                             <form method="post">
                               
                                     <div class="inputbox <?= (isset($errorList['name'])) ? 'invalid' : ''; ?>">
-                                    <input type="text" name="name" value="<?php showErrors('name', $errorList); ?>" required>
+                                    <input type="text" name="name" placeholder="<?php showErrors('name', $errorList); ?>" required>
                                         <label for="nom">Nom*</label>
                                     </div>
-                                    <div class="inputbox">
-                                        <input type="text" name="firstname" required>
+                                    <div class="inputbox <?= (isset($errorList['firstname'])) ? 'invalid' : ''; ?>">
+                                        <input type="text" name="firstname" placeholder="<?php showErrors('firstname', $errorList); ?>" required>
                                         <label for="firstname">Prénom*</label>
                                     </div>
-                                    <div class="inputbox">
-                                        <input type="text" name="mail" required>
+                                    <div class="inputbox <?= (isset($errorList['email'])) ? 'invalid' : ''; ?>">
+                                        <input type="text" name="mail" placeholder="<?php showErrors('email', $errorList); ?>" required>
                                         <label for="mail">Email*</label>
                                     </div>
-                                    <div class="inputbox" required>
-                                        <textarea name="message" id="message" required ></textarea>
+                                    <div class="inputbox <?= (isset($errorList['message'])) ? 'invalid' : ''; ?>" required>
+                                        <textarea name="message" id="message" required></textarea>
                                         <label for="message">Votre message*</label>
                                     </div>
                                     <div class="btn-check-form">
@@ -123,4 +94,4 @@ if(!empty($_POST)){
             </div>
 
 
-            <?php //if(isset($errorList['name']) && !empty($errorList['name'])){echo $errorList['name'];} ?>
+          
