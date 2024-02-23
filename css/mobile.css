@@ -1,0 +1,13 @@
+@media only screen and (max-width: 950px) {
+    footer{
+        display: none;
+    }
+    .main-container{
+        display: none;
+    }
+    body{
+        background:no-repeat center url(../img/underconstruc.jpg);
+        background-size: cover;
+    }
+  }
+  

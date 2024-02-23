@@ -5,7 +5,7 @@
                     </div>
                         <section class="mid-section">
                             <h2 class="title-card">Présentation<span id="input-cursor">|</span></h2>
-                            <p class="glass__paragraphe"> Après une décennie passée dans le secteur de la logistique, j'ai décidé de me réorienter vers l'informatique, un domaine qui me passionne.<br> Suite à un bilan de compétences visant à valider mon choix, j'ai entamé une formation de développeur web et web mobile au sein de l'école O'clock.<br> Actuellement, je suis à la recherche d'une opportunité d'alternance à partir d'octobre 2024 dans le cadre de la formation de Concepteur Développeur d'Applications, toujours au sein de l'école O'clock.</p>
+                            <p class="glass__paragraphe"> Après une décennie passée dans le secteur de la logistique, j'ai décidé de me réorienter vers l'informatique, un domaine qui me passionne.<br> Suite à un bilan de compétences visant à valider mon choix, j'ai entamé une <strong class="strong_presentation">formation de développeur web et web mobile</strong> au sein de l'école O'clock.<br> Actuellement, je suis à la <strong class="strong_presentation">recherche</strong> d'une opportunité d'<strong class="strong_presentation">alternance</strong> à partir d'octobre 2024 dans le cadre de la formation de <strong class="strong_presentation">Concepteur Développeur d'Applications</strong>, toujours au sein de l'école O'clock.</p>
                             <div>
                                 <ul class="social-list">
                                     <li><a href="mailto:denovann.belloir@oclock.school" target="_blank"><img src="img/email.png" alt="logo email" class="logo-contact"></a></li>
@@ -16,7 +16,7 @@
                         </section>
                         <aside class="cv-container">
                             <a href="#" class="cv-img-link">
-                                <img class="cv-img" src="img/Capture d'écran 2024-02-13 214630.png" alt="CV">
+                                <img class="cv-img" src="img/cv-img.png" alt="CV">
                             </a>
                             <strong class="cv-text">CV</strong>
                         </aside>  
