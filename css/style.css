@@ -392,6 +392,10 @@ input::placeholder{
     font-size: 0.8rem;
     font-style: italic;
 }
+
+.red_star{
+    color: #FFD60A;
+}
 /* Troisième carte */
 
 .projets_paragraphe{

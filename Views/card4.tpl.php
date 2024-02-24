@@ -65,22 +65,22 @@ function showErrors($fieldName, $errorList = null) {
                     <section class="formulaire-section">
                         <div class="formulaire-box">
                             <form method="post">
-                              <span class="champs_obligatoires">* champs obligatoires</span>
+                              <span class="champs_obligatoires"><span class="red_star">*</span> champs obligatoires</span>
                                     <div class="inputbox <?= (isset($errorList['name'])) ? 'invalid' : ''; ?>">
                                     <input type="text" name="name" <?php if (!empty($errorList)) { echo 'placeholder="' . showErrors('name', $errorList) . '"';} ?> required>
-                                        <label for="nom">Nom*</label>
+                                        <label for="nom">Nom<span class="red_star">*</span></label>
                                     </div>
                                     <div class="inputbox <?= (isset($errorList['firstname'])) ? 'invalid' : ''; ?>">
                                         <input type="text" name="firstname" <?php if (!empty($errorList)) { echo 'placeholder="' . showErrors('firstname', $errorList) . '"';} ?> required>
-                                        <label for="firstname">Prénom*</label>
+                                        <label for="firstname">Prénom<span class="red_star">*</span></label>
                                     </div>
                                     <div class="inputbox <?= (isset($errorList['email'])) ? 'invalid' : ''; ?>">
                                         <input type="text" name="mail" <?php if (!empty($errorList)) { echo 'placeholder="' . showErrors('email', $errorList) . '"';} ?> required>
-                                        <label for="mail">Email*</label>
+                                        <label for="mail">Email<span class="red_star">*</span></label>
                                     </div>
                                     <div class="inputbox <?= (isset($errorList['message'])) ? 'invalid' : ''; ?>" required>
                                         <textarea name="message" id="message" required></textarea>
-                                        <label for="message">Votre message*</label>
+                                        <label for="message">Votre message<span class="red_star">*</span></label>
                                     </div>
                                     <div class="btn-check-form">
                                         <input  type="checkbox" value="" id="copy" name="copy">
