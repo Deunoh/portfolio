@@ -393,8 +393,12 @@ input::placeholder{
     font-style: italic;
 }
 
-.red_star{
+.yellow_star{
     color: #FFD60A;
+}
+
+.red_text{
+    color: #d61c1c;
 }
 /* Troisième carte */
 
