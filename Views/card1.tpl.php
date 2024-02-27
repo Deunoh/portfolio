@@ -5,7 +5,6 @@
                         <h2>Developpeur web.<span id="input-cursor">| </span></h2>
                         <img class="one__img__profile" src="img/profil-light.jpeg" alt="photo de denovann">
                     </header>
-                    <p>test</p>
                     <section class="one__section__techno">
                         <div class="box-techno --front">
                             <h3 class="title-techno">Front</h3>

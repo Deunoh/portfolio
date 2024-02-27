@@ -49,6 +49,7 @@ if(!empty($_POST)){
          if($success){
             $textContent1 = "Votre message a été envoyé avec succès.";
             $textContent2 = "";
+            $styleValidate = true;
             
         } else {
             $textContent1 = "Il y a eu une erreur lors de l'envoi de votre message.";
@@ -69,6 +70,7 @@ if(!empty($_POST)){
             if($successExped){
             $textContent1 = "Votre message a été envoyé avec succès. Pensez à regarder vos spams";
             $textContent2 = "";
+            $styleValidate = true;
             
             } else {
                 $textContent1 = "Il y a eu une erreur lors de l'envoi de votre message de copie.";
@@ -87,7 +89,6 @@ function showErrors($fieldName, $errorList = null) {
     return $errors;
 }
 
-
 ?>
 
 
@@ -96,10 +97,9 @@ function showErrors($fieldName, $errorList = null) {
                     <div class="label-fixed">
                         <h3>Contact</h3>
                     </div>
-                   
                     <section class="mid-section">
                         <h2 class="title-card">Contact<span id="input-cursor">|</span></h2>
-                        <p class="contact-text <?= isset($styleAlert) && $styleAlert === true ? 'red_text' : '' ?>"><?= $textContent1 ?></p>
+                        <p class="contact-text  <?php if (isset($styleAlert) && $styleAlert === true) {echo "red_text";} elseif (isset($styleValidate) && $styleValidate === true) {echo "green_text";} else {echo '';} ?>"><?= $textContent1 ?></p>
                        <p class="contact-text"><?= $textContent2 ?></p>
                     </section>
 

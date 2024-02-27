@@ -402,6 +402,10 @@ input::placeholder{
 .red_text{
     color: #d61c1c;
 }
+
+.green_text{
+    color: palegreen;
+}
 /* Troisième carte */
 
 .projets_paragraphe{
