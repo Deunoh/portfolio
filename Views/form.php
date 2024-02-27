@@ -132,3 +132,95 @@ if(empty($errorList)){
 
 
 ?>
+
+<?php
+//FORMULAIRE EN COURS 
+$errorList = [];
+$textContent1 = 'Vous avez besoin d’obtenir d’autres informations ou de me rencontrer ?';
+$textContent2 = ' Remplissez ce formulaire !';
+
+if(!empty($_POST)){
+    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+    $firstname = filter_input(INPUT_POST, 'firstname', FILTER_SANITIZE_STRING);
+    $email = filter_input(INPUT_POST, 'mail', FILTER_VALIDATE_EMAIL);
+    $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
+
+    // Vérification des données et ajout au tableau d'erreurs
+    if(!$name || strlen($name) < 2 || strlen($name) > 15) {
+        $errorList['name'][] = 'Le nom est invalide';
+    }
+
+    if(!$firstname || strlen($firstname) < 2 || strlen($firstname) > 15) {
+        $errorList['firstname'][] = 'Le prénom est invalide';
+    }
+
+    if(!$email) {
+        $errorList['email'][] = 'E-mail invalide';
+    }
+
+    if(empty($email)){
+      $errorList['email'][] = 'E-mail obligatoire';
+    }
+
+    if(!$message) {
+        $errorList['message'][] = 'Le message n\est pas correct';
+    }
+    if(empty($message)) {
+      $errorList['message'][] = 'Le message est obligatoire';
+  }
+
+    // Si aucune erreur n'est détectée, traiter le formulaire (envoi d'email, etc.)
+    if(empty($errorList)) {
+        $to = "denovann.belloir@oclock.school";
+        $subject = "Nouveau message du formulaire de contact";
+        $messageBody = "Nom: " . utf8_encode($name) . "\n";
+        $messageBody .= "Prenom: $firstname\n";
+        $messageBody .= "Email: $email\n";
+        $messageBody .= "Message:\n$message";
+        $headers = "Content-Type: text/plain; charset=utf-8";
+        // Envoi du mail
+        $success = mail($to, $subject, $messageBody, $headers);
+        
+         if($success){
+            $textContent1 = "Votre message a été envoyé avec succès.";
+            $textContent2 = "";
+            
+        } else {
+            $textContent1 = "Il y a eu une erreur lors de l'envoi de votre message.";
+            $textContent2 = "";
+            $styleAlert = true;
+        }
+
+        if (filter_has_var(INPUT_POST, 'copy')) {
+            $to = $email;
+            $subject = "Votre message pour Denovann";
+            $messageBody = "Voici le message que vous m'avez envoyé : " . $message;
+            $headers = "From: denovann.belloir@oclock.school\r\n";
+            $headers .= "Reply-To: denovann.belloir@oclock.school\r\n";
+            $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
+
+            $successExped = mail($to, $subject, $messageBody, $headers);
+            
+            if($successExped){
+            $textContent1 = "Votre message a été envoyé avec succès. Pensez à regarder vos spams";
+            $textContent2 = "";
+            
+            } else {
+                $textContent1 = "Il y a eu une erreur lors de l'envoi de votre message de copie.";
+                $textContent2 = "";
+                $styleAlert = true;
+            }
+        }
+    }
+}
+
+function showErrors($fieldName, $errorList = null) {
+    $errors = '';
+    if(isset($errorList) && !empty($errorList[$fieldName])) {
+        $errors .= implode(' ', $errorList[$fieldName]);
+    }
+    return $errors;
+}
+
+
+?>

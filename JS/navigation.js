@@ -35,6 +35,7 @@ const navigation = {
                    } else if (entry.target === navigation.cardFourBreakPoint) {
                        navigation.btnFour.style.backgroundColor = '#D9D9D9';
                        navigation.btnFour.style.border = "solid 1px #535456"; 
+                       window.location.hash = "quatre";
                    }
                } else {
                    if (entry.target === navigation.cardOneBreakPoint) {
