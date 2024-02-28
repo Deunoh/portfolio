@@ -219,6 +219,10 @@ header h2{
     padding: 2em;
 
 }
+
+.glass__paragraphe p{
+    padding-bottom: 10px;
+}
 .social-list{
     display: flex;
     justify-content: center;
