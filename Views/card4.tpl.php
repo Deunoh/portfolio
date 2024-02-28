@@ -5,10 +5,10 @@ $textContent1 = 'Vous avez besoin d’obtenir d’autres informations ou de me r
 $textContent2 = ' Remplissez ce formulaire !';
 
 if(!empty($_POST)){
-    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-    $firstname = filter_input(INPUT_POST, 'firstname', FILTER_SANITIZE_STRING);
+    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $firstname = filter_input(INPUT_POST, 'firstname', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $email = filter_input(INPUT_POST, 'mail', FILTER_VALIDATE_EMAIL);
-    $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
+    $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
     // Vérification des données et ajout au tableau d'erreurs
     if(!$name || strlen($name) < 2 || strlen($name) > 15) {
@@ -89,6 +89,7 @@ function showErrors($fieldName, $errorList = null) {
     return $errors;
 }
 
+//TODO <?= $_POST['title'] ?? $pokemon->getTitle() EN VALUE 
 ?>
 
 
