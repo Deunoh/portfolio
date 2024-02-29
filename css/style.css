@@ -55,15 +55,17 @@ body{
 .mid-section{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 100%;
     width: 40%;
     padding-left: 10%;
    
 }
 
-#deux .mid-section{
-    justify-content: space-evenly;
+#quatre .mid-section{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .label-fixed{
@@ -218,7 +220,6 @@ header h2{
     font-size: 1.5rem;
     padding: 1em;
     line-height: 1.1;
-
 }
 
 .glass__paragraphe p{
@@ -231,7 +232,7 @@ header h2{
     height: 100%;
     width: 40%;
     margin-left: 10%;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 /* .three_left_section .title-card{
@@ -279,6 +280,7 @@ header h2{
 
 .cv-img{
     height: 40vh;
+    box-shadow: 0 0 10px #000;
 }
 
 .cv-img-link{
@@ -313,7 +315,7 @@ header h2{
 /* section de gauche width 40% */
 .contact-text{
     font-family: var(--paragraphe-font);
-    font-size: 2.5rem;
+    font-size: 3vw;
     text-shadow: 0px 0px 3px #000;
 }
 

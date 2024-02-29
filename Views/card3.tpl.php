@@ -6,7 +6,7 @@
                     </div>
                     
                     <section class="three_left_section">
-                        <h2 class="title-card">Mes projets<span id="input-cursor">|</span></h2> 
+                    
                         <p class="glass__paragraphe projets_paragraphe">Je partage ici mes projets personnels, promoliegeois.net à été développer avant ma formation pour apprendre les bases de la programmation, il a aussi pour but de centraliser les sites utiles pour les étudiants de l'école O'clock. D'autres projets sont en cours de développement ! </p>
                         <del></del>
                     </section>

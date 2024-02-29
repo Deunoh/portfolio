@@ -15,7 +15,7 @@ const navigation = {
 
        navigation.changeColor();
        
-
+    
     },
 
     changeColor: function(){
@@ -24,16 +24,16 @@ const navigation = {
            for (const entry of entries){
                if(entry.isIntersecting){
                    if (entry.target === navigation.cardOneBreakPoint) {
-                       navigation.btnOne.style.backgroundColor = '#D9D9D9';
+                       navigation.btnOne.style.backgroundColor = '#FFD60A';
                        navigation.btnOne.style.border = "solid 1px #535456";
                    } else if (entry.target === navigation.cardTwoBreakPoint) {
-                       navigation.btnTwo.style.backgroundColor = '#D9D9D9';
+                       navigation.btnTwo.style.backgroundColor = '#FFD60A';
                        navigation.btnTwo.style.border = "solid 1px #535456"; 
                    } else if (entry.target === navigation.cardThreeBreakPoint) {
-                       navigation.btnThree.style.backgroundColor = '#D9D9D9';
+                       navigation.btnThree.style.backgroundColor = '#FFD60A';
                        navigation.btnThree.style.border = "solid 1px #535456"; 
                    } else if (entry.target === navigation.cardFourBreakPoint) {
-                       navigation.btnFour.style.backgroundColor = '#D9D9D9';
+                       navigation.btnFour.style.backgroundColor = '#FFD60A';
                        navigation.btnFour.style.border = "solid 1px #535456"; 
                        window.location.hash = "quatre";
                    }
