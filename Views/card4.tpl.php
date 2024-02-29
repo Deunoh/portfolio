@@ -99,7 +99,7 @@ function showErrors($fieldName, $errorList = null) {
                         <h3>Contact</h3>
                     </div>
                     <section class="mid-section">
-                        <h2 class="title-card">Contact<span id="input-cursor">|</span></h2>
+                        <h2 class="title-card">Contactez-moi !<span id="input-cursor">|</span></h2>
                         <p class="contact-text  <?php if (isset($styleAlert) && $styleAlert === true) {echo "red_text";} elseif (isset($styleValidate) && $styleValidate === true) {echo "green_text";} else {echo '';} ?>"><?= $textContent1 ?></p>
                        <p class="contact-text"><?= $textContent2 ?></p>
                     </section>

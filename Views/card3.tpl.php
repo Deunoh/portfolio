@@ -5,10 +5,10 @@
                         <h3>Projets</h3>
                     </div>
                     
-                    <section class="mid-section">
-                        <h2 class="title-card">Projets<span id="input-cursor">|</span></h2> 
+                    <section class="three_left_section">
+                        <h2 class="title-card">Mes projets<span id="input-cursor">|</span></h2> 
                         <p class="glass__paragraphe projets_paragraphe">Je partage ici mes projets personnels, promoliegeois.net à été développer avant ma formation pour apprendre les bases de la programmation, il a aussi pour but de centraliser les sites utiles pour les étudiants de l'école O'clock. D'autres projets sont en cours de développement ! </p>
-                        <p></p>
+                        <del></del>
                     </section>
                     <section class="right_section_projects">
                         <div class="projects-box">

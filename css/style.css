@@ -216,13 +216,33 @@ header h2{
     backdrop-filter: blur(5px);
     box-shadow: 0 0 2px #F1FAFD;
     font-size: 1.5rem;
-    padding: 2em;
+    padding: 1em;
+    line-height: 1.1;
 
 }
 
 .glass__paragraphe p{
     padding-bottom: 10px;
 }
+
+.three_left_section{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+    margin-left: 10%;
+    justify-content: space-around;
+}
+
+/* .three_left_section .title-card{
+    margin-top: 15%;
+  
+} */
+
+.projets_paragraphe{
+    width: fit-content;
+}
+
 .social-list{
     display: flex;
     justify-content: center;
@@ -350,7 +370,7 @@ input:focus ~ label, input:valid ~ label, input:placeholder-shown ~ label {
     top: -6px;
 }
 textarea:focus ~ label, textarea:valid ~ label{
-    top: -9px;
+    top: -8px;
 }
 .inputbox input, textarea{
     width: 100%;
@@ -415,10 +435,6 @@ input::placeholder{
     color: palegreen;
 }
 /* Troisième carte */
-
-.projets_paragraphe{
-    width: fit-content;
-}
 
 .right_section_projects{
     width: 60%;
