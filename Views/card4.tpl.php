@@ -99,8 +99,10 @@ function showErrors($fieldName, $errorList = null) {
                         <h3>Contact</h3>
                     </div>
                     <section class="mid-section">
-                        <h2 class="title-card">Contactez-moi !<span id="input-cursor">|</span></h2>
                         <p class="contact-text  <?php if (isset($styleAlert) && $styleAlert === true) {echo "red_text";} elseif (isset($styleValidate) && $styleValidate === true) {echo "green_text";} else {echo '';} ?>"><?= $textContent1 ?></p>
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/1543f523-0bf1-4b91-b03b-7b5f5ebf7e95/CwMZf45UQa.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
                        <p class="contact-text"><?= $textContent2 ?></p>
                     </section>
 
@@ -120,7 +122,7 @@ function showErrors($fieldName, $errorList = null) {
                                         <input type="text" name="mail" <?php if (!empty($errorList)) { echo 'placeholder="' . showErrors('email', $errorList) . '"';} ?> required>
                                         <label for="mail">Email<span class="yellow_star">*</span></label>
                                     </div>
-                                    <div class="inputbox <?= (isset($errorList['message'])) ? 'invalid' : ''; ?>" required>
+                                    <div class="inputbox <?= (isset($errorList['message'])) ? 'invalid' : ''; ?>">
                                         <textarea name="message" id="message" required></textarea>
                                         <label for="message">Votre message<span class="yellow_star">*</span></label>
                                     </div>

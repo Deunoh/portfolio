@@ -4,7 +4,6 @@
                         <h3>Présentation</h3>
                     </div>
                         <section class="mid-section">
-                            <h2 class="title-card">Qui suis-je ?<span id="input-cursor">|</span></h2>
                             <div class="glass__paragraphe"><p>Après une décennie passée dans le secteur de la logistique, j'ai décidé de me réorienter vers l'informatique, un domaine qui me passionne.</p>
                              <p>Suite à un bilan de compétences visant à valider mon choix, j'ai entamé une <strong class="strong_presentation">formation de développeur web et web mobile</strong> au sein de l'école O'clock.</p>
                               <p>Actuellement, je suis à la <strong class="strong_presentation">recherche</strong> d'une opportunité d'<strong class="strong_presentation">alternance</strong>
@@ -22,7 +21,7 @@
                             <a href="#" class="cv-img-link">
                                 <img class="cv-img" src="img/cv-img.png" alt="CV">
                             </a>
-                            <strong class="cv-text">CV</strong>
+                            
                         </aside>  
                 </div>
 </div>
