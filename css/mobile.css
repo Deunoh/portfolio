@@ -1,13 +1,481 @@
-@media only screen and (max-width: 950px) {
-    footer{
-        display: none;
-    }
-    .main-container{
-        display: none;
-    }
-    body{
-        background:no-repeat center url(../img/underconstruc.jpg);
-        background-size: cover;
-    }
-  }
+:root {
+    --main-color: #F1FAFD;
+    --title-font: 'Merriweather', serif;
+    --paragraphe-font: "Open Sans", sans-serif;
+   
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    color: var(--main-color);
+}
+
+
+.card-box {
+    /* background-color: darkslategray; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    width: 370vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+   background-color: var(--main-color);
+   
+}
+.main-container {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden;
+    /* pour ie et mozilla */
+    -ms-overlow-style: none;
+    scrollbar-width: none;
   
+}
+
+.card{
+    padding: 1px;
+    height: 90%;
+    width: 85%;
+    border-radius: 60px;
+    box-shadow: 0 0 20px black;
+    background-image: url("../img/background\ -\ mobile.jpg");
+    background-size: cover;
+}
+
+.mid-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 40%;
+    padding-left: 10%;
+   
+}
+
+#quatre .mid-section{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-fixed{
+    position: absolute;
+    left: 0;
+    top: 44vh;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    transform: translateY(-50%);
+}
+.label-fixed h3{
+    font-family: var(--title-font);
+    color: black;
+    background-color: #FFD60A;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0.5rem;
+   
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.one {
+    margin-left: 3rem;
+    /* background: #2A2A28; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.one__img__profile{
+    display: none;
+}
+
+.one__section__techno {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--title-font);
+    color: var(--main-color);
+    /* gap: 4rem;
+    margin-bottom: 4rem; */
+}
+
+.box-techno{
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(100, 100, 100, 0.2);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 2px #F1FAFD;
+    border-radius: 25px;
+    font-size: 2vh;
+}
+
+.box-techno ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    margin: 1vh;
+    gap: 0.5rem;
+    margin: 1rem;
+   
+}
+
+.box-techno ul li{
+    /* margin-left: 33%; */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+.logo-techno{
+    height: 20px;
+    aspect-ratio: 1/1;
+}
+
+.two {
+    position: relative;
+   display: flex;
+   
+}
+.three {
+    position: relative;
+    display: flex;
+   
+}
+.four {
+    position: relative;
+    display: flex;
+   
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+header h1 {
+    /* margin: 3rem 3rem 2rem 3rem; */
+    /* font-family: var(--title-font); */
+    font-size: 3vh;
+    color: var(--main-color);
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+header h2{
+    /* margin: 0 3rem; */
+    /* line-height: 2rem; */
+    font-family: var(--title-font);
+    font-size: 2.5vh;
+    color: var(--main-color);
+}
+
+.title-techno{
+    position: absolute;
+    top: -2vh;
+    left: 50%;
+    font-size: 3vh;
+    transform: translate(-50%, -50%);
+}
+
+
+/* titre des cartes */
+.title-card{
+    font-size: 4vw;
+}
+.title-card_without-flex{
+    margin-top: 10vh;
+    margin-left: 8vw;
+}
+.glass__paragraphe{
+    text-align: center;
+    font-family: var(--paragraphe-font);
+    border-radius: 30px;
+    background-color: rgba(100, 100, 100, 0.2);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 2px #F1FAFD;
+    font-size: 1.5rem;
+    padding: 1em;
+    line-height: 1.1;
+}
+
+.glass__paragraphe p{
+    padding-bottom: 10px;
+}
+
+.three_left_section{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+    margin-left: 10%;
+    justify-content: center;
+}
+
+/* .three_left_section .title-card{
+    margin-top: 15%;
+  
+} */
+
+.projets_paragraphe{
+    width: fit-content;
+}
+
+.social-list{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+.social-list li{
+    width: 6rem;
+    height: 6rem;
+}
+.strong_presentation{
+    color: #FFCA16;
+}
+.logo-contact{
+    width: 4rem;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    transition: transform .2s;
+}
+.logo-contact:hover{
+    transform: scale(1.3);
+}
+
+/* Image cv */
+.two section{
+    width: 50%;
+}
+
+.two aside{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+
+.cv-img{
+    height: 40vh;
+    box-shadow: 0 0 10px #000;
+}
+
+.cv-img-link{
+    transition: transform .2s;
+}
+
+.cv-img-link:hover{
+    transform: scale(1.1);
+}
+
+.cv-text {
+   
+    color: #b9b39d;
+    text-shadow: 0px 0px 2px black;
+    font-size: 115px;
+    font-weight: bold;
+    opacity: 1;
+    
+    
+   
+}
+.cv-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* fin image cv */
+
+/* Quatrieme carte */
+/* section de gauche width 40% */
+.contact-text{
+    font-family: var(--paragraphe-font);
+    font-size: 3vw;
+    text-shadow: 0px 0px 3px #000;
+}
+
+/* formulaire */
+
+.formulaire-section{
+    font-size: 1.5rem;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--paragraphe-font);
+}
+
+.formulaire-box{
+    width: 80%;
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 25px;
+    background-color: rgba(100, 100, 100, 0.2);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 2px #F1FAFD;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+form{
+    height: 100%;
+    width: 80%;
+}
+
+form h2{
+    font-size: 2em;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 1.2rem 0;
+    width: 95%;
+    border-bottom: 1px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 42%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label, input:valid ~ label, input:placeholder-shown ~ label {
+    top: -6px;
+}
+textarea:focus ~ label, textarea:valid ~ label{
+    top: -8px;
+}
+.inputbox input, textarea{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+
+}
+textarea{
+    height: 100px;
+    max-height: 150px;
+    resize: none;
+}
+
+#submit{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+#submit:hover{
+    background: #FFD60A;
+}
+
+.btn-check-form{
+    padding-bottom: 1.5rem;
+}
+
+.invalid{
+    border-bottom: 1px solid #ff0000;
+    color: #ff0000;
+}
+
+input::placeholder{
+    color: #ff0000;
+}
+
+.champs_obligatoires{
+    align-self: flex-end;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.yellow_star{
+    color: #FFD60A;
+}
+
+.red_text{
+    color: #d61c1c;
+}
+
+.green_text{
+    color: palegreen;
+}
+/* Troisième carte */
+
+.right_section_projects{
+    width: 60%;
+    
+}
+.projects-box{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.projects__img{
+    width: 20vw;
+    transition: transform .2s;
+}
+.projects__img:hover{
+    transform: scale(1.2);
+}
+
+/* Footer */
+
+footer{
+    display: none;
+}
+
+footer nav ul{
+    display: flex;
+    gap: 1.5rem;
+}
+footer a {
+    padding: 1px 2rem;
+    border-radius: 30px;
+    background-color: #535456;
+    border: none;
+    cursor: pointer;
+}
+
+

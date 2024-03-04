@@ -10,6 +10,7 @@ body{
     color: var(--main-color);
 }
 
+
 .card-box {
     /* background-color: darkslategray; */
     width: 100vw;
@@ -49,7 +50,6 @@ body{
     box-shadow: 0 0 20px black;
     background-image: url("../img/background.jpg");
     background-size: cover;
-
 }
 
 .mid-section{
