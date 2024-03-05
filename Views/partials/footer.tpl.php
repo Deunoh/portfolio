@@ -2,7 +2,7 @@
         </main>
     </div>
     <footer>
-        <nav>
+        <nav class="scrollbar">
             <ul>
                 <li><a class="btn-nav" id="btn__card__1" href="#un"></a></li>
                 <li><a class="btn-nav" id="btn__card__2" href="#deux"></a></li>

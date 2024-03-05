@@ -24,7 +24,7 @@ body{
 .cards-container {
     display: flex;
     flex-direction: row;
-    width: 370vw;
+    width: 400vw;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
    background-color: var(--main-color);
@@ -44,22 +44,20 @@ body{
 
 .card{
     padding: 1px;
-    height: 90%;
-    width: 85%;
+    height: 80%;
+    width: 90%;
     border-radius: 60px;
     box-shadow: 0 0 20px black;
     background-image: url("../img/background\ -\ mobile.jpg");
     background-size: cover;
 }
 
-.mid-section{
+.mid-section {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100%;
     width: 40%;
-    padding-left: 10%;
-   
+    flex-direction: column;
 }
 
 #quatre .mid-section{
@@ -71,7 +69,7 @@ body{
 .label-fixed{
     position: absolute;
     left: 0;
-    top: 44vh;
+    top: 41vh;
     text-orientation: upright;
     writing-mode: vertical-lr;
     transform: translateY(-50%);
@@ -82,7 +80,7 @@ body{
     background-color: #FFD60A;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 0.8rem;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 0.5rem;
@@ -93,8 +91,7 @@ body{
 }
 
 .one {
-    margin-left: 3rem;
-    /* background: #2A2A28; */
+    
     position: relative;
     display: flex;
     flex-direction: column;
@@ -154,8 +151,9 @@ body{
 
 .two {
     position: relative;
-   display: flex;
-   
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 .three {
     position: relative;
@@ -199,7 +197,7 @@ header h2{
     position: absolute;
     top: -2vh;
     left: 50%;
-    font-size: 3vh;
+    font-size: 2.5vh;
     transform: translate(-50%, -50%);
 }
 
@@ -220,7 +218,7 @@ header h2{
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(5px);
     box-shadow: 0 0 2px #F1FAFD;
-    font-size: 1.5rem;
+    font-size: 2vh;
     padding: 1em;
     line-height: 1.1;
 }
@@ -230,12 +228,13 @@ header h2{
 }
 
 .three_left_section{
-    display: flex;
+    display: none;
+    /* display: flex;
     flex-direction: column;
     height: 100%;
     width: 40%;
     margin-left: 10%;
-    justify-content: center;
+    justify-content: center; */
 }
 
 /* .three_left_section .title-card{
@@ -249,8 +248,8 @@ header h2{
 
 .social-list{
     display: flex;
+    margin-left: 10%;
     justify-content: center;
-    gap: 5vw;
 }
 .social-list li{
     width: 6rem;
@@ -260,7 +259,7 @@ header h2{
     color: #FFCA16;
 }
 .logo-contact{
-    width: 4rem;
+    width: 2.5rem;
     aspect-ratio: 1/1;
     border-radius: 20px;
     transition: transform .2s;
@@ -271,18 +270,19 @@ header h2{
 
 /* Image cv */
 .two section{
-    width: 50%;
+    width: 75%;
 }
 
 .two aside{
-    width: 50%;
-    height: 100%;
-    /* background-color: red; */
+    margin-top: 1rem;
+    width: fit-content;
+    height: fit-content;
+    display: none;
 }
 
 
 .cv-img{
-    height: 40vh;
+    height: 25vh;
     box-shadow: 0 0 10px #000;
 }
 
@@ -315,6 +315,10 @@ header h2{
 /* fin image cv */
 
 /* Quatrieme carte */
+
+#quatre .mid-section{
+    display: none;
+}
 /* section de gauche width 40% */
 .contact-text{
     font-family: var(--paragraphe-font);
@@ -326,7 +330,7 @@ header h2{
 
 .formulaire-section{
     font-size: 1.5rem;
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -334,7 +338,7 @@ header h2{
 }
 
 .formulaire-box{
-    width: 80%;
+    width: 70%;
     height: fit-content;
     padding: 1rem;
     border-radius: 25px;
@@ -367,7 +371,7 @@ form h2{
     left: 5px;
     transform: translateY(-50%);
     color: #fff;
-    font-size: 1em;
+    font-size: 0.8em;
     pointer-events: none;
     transition: .5s;
 }
@@ -392,6 +396,10 @@ textarea{
     height: 100px;
     max-height: 150px;
     resize: none;
+}
+
+.copy-label{
+    font-size: 1rem;
 }
 
 #submit{
@@ -442,7 +450,7 @@ input::placeholder{
 /* Troisième carte */
 
 .right_section_projects{
-    width: 60%;
+    width: 100%;
     
 }
 .projects-box{
@@ -453,7 +461,7 @@ input::placeholder{
     justify-content: space-around;
 }
 .projects__img{
-    width: 20vw;
+    width: 50vw;
     transition: transform .2s;
 }
 .projects__img:hover{
@@ -462,7 +470,7 @@ input::placeholder{
 
 /* Footer */
 
-footer{
+.scrollbar{
     display: none;
 }
 
