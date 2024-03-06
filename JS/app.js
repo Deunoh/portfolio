@@ -6,7 +6,7 @@ import footerMobile from './footerMobile.js';
 
 const app = {
     init: function(){
-        footerMobile.init();
+        // footerMobile.init();
         navigation.init();
         cursor.init();
         

@@ -322,7 +322,9 @@ header h2{
 }
 
 /* formulaire */
-
+button{
+    color: #000;
+}
 .formulaire-section{
     font-size: 1.5rem;
     width: 60%;
