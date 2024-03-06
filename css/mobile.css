@@ -489,11 +489,8 @@ input::placeholder{
 
 footer{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    bottom: 15px;
-
+    position: absolute;
+    bottom: 2rem;
 }
 
 .footer-paragraphe{
