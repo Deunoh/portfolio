@@ -32,6 +32,8 @@
                             </ul>
                         </div>
                     </section>
-                   
+                        <div class="swipe-logo" hidden> 
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script><dotlottie-player src="https://lottie.host/8bd8b69a-2d16-41cf-b9d1-395b52e88ef3/MYzp9ozTWj.json" background="transparent" speed="1" style="width: 80px; height: 80px" direction="1" playMode="normal" loop autoplay></dotlottie-player>
+                        </div>
                 </div>
             </div>

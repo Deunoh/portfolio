@@ -102,7 +102,7 @@ function showErrors($fieldName, $errorList = null) {
                         <p class="contact-text  <?php if (isset($styleAlert) && $styleAlert === true) {echo "red_text";} elseif (isset($styleValidate) && $styleValidate === true) {echo "green_text";} else {echo '';} ?>"><?= $textContent1 ?></p>
                         <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
-    <dotlottie-player src="https://lottie.host/1543f523-0bf1-4b91-b03b-7b5f5ebf7e95/CwMZf45UQa.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                        <dotlottie-player src="https://lottie.host/1543f523-0bf1-4b91-b03b-7b5f5ebf7e95/CwMZf45UQa.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
                        <p class="contact-text"><?= $textContent2 ?></p>
                     </section>
 
@@ -128,8 +128,8 @@ function showErrors($fieldName, $errorList = null) {
                                     </div>
                                     <div class="btn-check-form">
                                         <input  type="checkbox" value="" id="copy" name="copy">
-                                        <label  for="copy">
-                                        Recevoir une copie du message
+                                        <label  for="copy" class="copy-label">
+                                        Recevoir une copie
                                         </label>
                                     </div>
                                     <button type="submit" id="submit" name="submit">Envoyer</button> 

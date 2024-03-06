@@ -14,7 +14,6 @@ const navigation = {
         navigation.cardFourBreakPoint = document.getElementById('quatre');
 
        navigation.changeColor();
-       
     
     },
 
