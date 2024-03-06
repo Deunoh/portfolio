@@ -96,8 +96,21 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+.swipe-logo{
+    width: fit-content;
+    position: absolute;
+    right: 15px;
+    bottom: 0em;   
+}
 .one__img__profile{
-    display: none;
+    width: 15%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    box-shadow: 0 0 10px #F1FAFD;
 }
 
 .one__section__techno {
@@ -178,7 +191,7 @@ header{
 header h1 {
     /* margin: 3rem 3rem 2rem 3rem; */
     /* font-family: var(--title-font); */
-    font-size: 3vh;
+    font-size: 6vw;
     color: var(--main-color);
     font-family: "Anton", sans-serif;
     font-weight: 400;
@@ -189,7 +202,7 @@ header h2{
     /* margin: 0 3rem; */
     /* line-height: 2rem; */
     font-family: var(--title-font);
-    font-size: 2.5vh;
+    font-size: 4vw;
     color: var(--main-color);
 }
 
@@ -474,16 +487,50 @@ input::placeholder{
     display: none;
 }
 
-footer nav ul{
-    display: flex;
-    gap: 1.5rem;
+footer{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   position: fixed;
+   bottom: 2rem;
+
 }
-footer a {
-    padding: 1px 2rem;
-    border-radius: 30px;
-    background-color: #535456;
-    border: none;
-    cursor: pointer;
+
+.footer-paragraphe{
+    font-size: 1rem;
+    font-family: var(--paragraphe-font);
+    color: #000;
+    width: 100%;
+    /* scrolling text */
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%); 
+    transform:translateX(100%);
+    /* Apply animation to this element */ 
+    -moz-animation: scroll-left 10s linear infinite;
+    -webkit-animation: scroll-left 10s linear infinite;
+    animation: scroll-left 10s linear infinite;
+    }
+    /* Move it (define the animation) */
+    @-moz-keyframes scroll-left {
+    0% { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+    }
+    @-webkit-keyframes scroll-left {
+    0% { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+    }
+    @keyframes scroll-left {
+    0% { 
+    -moz-transform: translateX(100%); 
+    -webkit-transform: translateX(100%); 
+    transform: translateX(100%); 
+    }
+    100% { 
+    -moz-transform: translateX(-100%); 
+    -webkit-transform: translateX(-100%); 
+    transform: translateX(-100%); 
+    }
 }
 
 
