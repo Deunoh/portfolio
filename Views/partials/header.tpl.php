@@ -17,8 +17,8 @@
 
     
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" media="screen and (max-width: 950px)" href="./css/mobile.css">
-    <link rel="stylesheet" media="screen and (min-width: 951px)" href="./css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 950px)" href="./css/mobiles.css">
+    <link rel="stylesheet" media="screen and (min-width: 951px)" href="./css/desktop.css">
 
 </head>
 

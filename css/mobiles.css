@@ -487,48 +487,6 @@ input::placeholder{
     display: none;
 }
 
-/* footer{
-    padding: 1px;
-    width: 100%;
-    position: absolute;
-    bottom: 2rem;
-}
 
-.footer-paragraphe{
-    font-size: 1rem;
-    font-family: var(--paragraphe-font);
-    color: #000;
-    width: 100%;
-    /* scrolling text */
-    /* Starting position */
-    -moz-transform:translateX(100%);
-    -webkit-transform:translateX(100%); 
-    transform:translateX(100%);
-    /* Apply animation to this element */ 
-    -moz-animation: scroll-left 10s linear infinite;
-    -webkit-animation: scroll-left 10s linear infinite;
-    animation: scroll-left 10s linear infinite;
-    }
-    /* Move it (define the animation) */
-    @-moz-keyframes scroll-left {
-    0% { -moz-transform: translateX(100%); }
-    100% { -moz-transform: translateX(-100%); }
-    }
-    @-webkit-keyframes scroll-left {
-    0% { -webkit-transform: translateX(100%); }
-    100% { -webkit-transform: translateX(-100%); }
-    }
-    @keyframes scroll-left {
-    0% { 
-    -moz-transform: translateX(100%); 
-    -webkit-transform: translateX(100%); 
-    transform: translateX(100%); 
-    }
-    100% { 
-    -moz-transform: translateX(-100%); 
-    -webkit-transform: translateX(-100%); 
-    transform: translateX(-100%); 
-    } */
-}
 
 
