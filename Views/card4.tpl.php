@@ -112,19 +112,19 @@ function showErrors($fieldName, $errorList = null) {
                               <span class="champs_obligatoires"><span class="yellow_star">*</span> champs obligatoires</span>
                                     <div class="inputbox <?= (isset($errorList['name'])) ? 'invalid' : ''; ?>">
                                     <input type="text" name="name" <?php if (!empty($errorList)) { echo 'placeholder="' . showErrors('name', $errorList) . '"';} ?> required>
-                                        <label for="nom">Nom<span class="yellow_star">*</span></label>
+                                        <label for="nom" class="animate-label">Nom<span class="yellow_star">*</span></label>
                                     </div>
                                     <div class="inputbox <?= (isset($errorList['firstname'])) ? 'invalid' : ''; ?>">
                                         <input type="text" name="firstname" <?php if (!empty($errorList)) { echo 'placeholder="' . showErrors('firstname', $errorList) . '"';} ?> required>
-                                        <label for="firstname">Prénom<span class="yellow_star">*</span></label>
+                                        <label for="firstname" class="animate-label">Prénom<span class="yellow_star">*</span></label>
                                     </div>
                                     <div class="inputbox <?= (isset($errorList['email'])) ? 'invalid' : ''; ?>">
                                         <input type="text" name="mail" <?php if (!empty($errorList)) { echo 'placeholder="' . showErrors('email', $errorList) . '"';} ?> required>
-                                        <label for="mail">Email<span class="yellow_star">*</span></label>
+                                        <label for="mail" class="animate-label">Email<span class="yellow_star">*</span></label>
                                     </div>
                                     <div class="inputbox <?= (isset($errorList['message'])) ? 'invalid' : ''; ?>">
                                         <textarea name="message" id="message" required></textarea>
-                                        <label for="message">Votre message<span class="yellow_star">*</span></label>
+                                        <label for="message" class="animate-label">Votre message<span class="yellow_star">*</span></label>
                                     </div>
                                     <div class="btn-check-form">
                                         <input  type="checkbox" value="" id="copy" name="copy">

@@ -18,7 +18,7 @@
                             </div>
                         </section>
                         <aside class="cv-container">
-                            <a href="#" class="cv-img-link">
+                            <a href="../img/projects/CV.pdf" class="cv-img-link" target='_blank'>
                                 <img class="cv-img" src="img/cv-img.png" alt="CV">
                             </a>
                             
