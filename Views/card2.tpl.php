@@ -3,12 +3,20 @@
                     <div class="label-fixed">
                         <h3>Présentation</h3>
                     </div>
-                        <section class="mid-section">
-                            <div class="glass__paragraphe"><p>Après une décennie passée dans le secteur de la logistique, j'ai décidé de me réorienter vers l'informatique, un domaine qui me passionne.</p>
-                             <p>Suite à un bilan de compétences visant à valider mon choix, j'ai entamé une <strong class="strong_presentation">formation de développeur web et web mobile</strong> au sein de l'école O'clock.</p>
-                              <p>Actuellement, je suis à la <strong class="strong_presentation">recherche</strong> d'une opportunité d'<strong class="strong_presentation">alternance</strong>
-                              à partir d'octobre 2024 dans le cadre de la formation de <strong class="strong_presentation">Concepteur Développeur d'Applications</strong>, toujours au sein de l'école O'clock.</p>
+                        <section class="mid-section animate-box">
+                            <div class="card-box-animate">
+                                <div class="glass__paragraphe animate-card-front"><p>Après une décennie passée dans le secteur de la logistique, j'ai décidé de me réorienter vers l'informatique, un domaine qui me passionne.</p>
+                                <p>Suite à un bilan de compétences visant à valider mon choix, j'ai entamé une <strong class="strong_presentation">formation de développeur web et web mobile</strong> au sein de l'école O'clock.</p>
+                                <p>Actuellement, je suis à la <strong class="strong_presentation">recherche</strong> d'une opportunité d'<strong class="strong_presentation">alternance</strong>
+                                à partir d'octobre 2024 dans le cadre de la formation de <strong class="strong_presentation">Concepteur Développeur d'Applications</strong>, toujours au sein de l'école O'clock.</p>
+                                </div>
+                                <div class="glass__paragraphe animate-card-back">
+                                    <h2>Qui suis-je ?</h2>
+                                    <p>Dans le monde professionnel et personnel, je suis quelqu'un de <strong class="strong_presentation">curieux</strong>, j'aime appronfondir mes connaissances !, un tempérament <strong class="strong_presentation">calme</strong> tout en étant <strong class="strong_presentation">dynamique</strong> ! Je suis autant à l'aise à <strong class="strong_presentation">travailler en équipe</strong> que en <strong class="strong_presentation">autonomie</strong></p>
+                                    
+                                </div>
                             </div>
+                            
                             <div class="social-list-box">
                                 <ul class="social-list">
                                     <li><a href="mailto:denovann.belloir@oclock.school" target="_blank"><img src="img/email.png" alt="logo email" class="logo-contact"></a></li>

@@ -61,6 +61,36 @@ body{
     padding-left: 10%;
    
 }
+/* animation glass paragraphe carte 2 */
+.animate-box{
+    perspective: 2000px;
+    perspective-origin: top;
+}
+.animate-box:hover .card-box-animate{
+    transform: rotateY(180deg);
+}
+
+.card-box-animate{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.86,0,0.07,1);
+}
+
+.animate-card-front, .animate-card-back{
+    height: 85%;
+    width: 90%;
+}
+.animate-card-front{
+     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.animate-card-back{
+    position: absolute;
+    top: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
 
 #quatre .mid-section{
     text-align: center;
