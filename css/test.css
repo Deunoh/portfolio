@@ -51,7 +51,7 @@ footer{
     bottom: 2rem;
 }
 
-.footer-paragraphe{
+.scroll-paragraphe{
     font-size: 1rem;
     font-family: var(--paragraphe-font);
     color: #000;

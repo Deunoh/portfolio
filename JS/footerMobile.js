@@ -37,5 +37,4 @@ const footerMobile = {
 
 export default footerMobile;
 
-// Initialisation de l'objet footerMobile
-footerMobile.init();
+
