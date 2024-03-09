@@ -12,8 +12,9 @@
                                 </div>
                                 <div class="glass__paragraphe animate-card-back">
                                     <h2>Qui suis-je ?</h2>
-                                    <p>Dans le monde professionnel et personnel, je suis quelqu'un de <strong class="strong_presentation">curieux</strong>, j'aime appronfondir mes connaissances !, un tempérament <strong class="strong_presentation">calme</strong> tout en étant <strong class="strong_presentation">dynamique</strong> ! Je suis autant à l'aise à <strong class="strong_presentation">travailler en équipe</strong> que en <strong class="strong_presentation">autonomie</strong></p>
-                                    
+                                    <p>Que ce soit dans un contexte professionnel ou personnel, je suis quelqu'un de <strong class="strong_presentation">curieux</strong> qui adore apprendre de nouvelles choses.</p>
+                                    <p> De nature <strong class="strong_presentation">calme</strong> et <strong class="strong_presentation">positive</strong>, je suis autant à l'aise à travailler en <strong class="strong_presentation">équipe</strong> qu'en <strong class="strong_presentation">autonomie</strong>.</p>
+                                    <p>En dehors du contexte professionnel, j'aime essentiellement la <strong class="strong_hobbies">photographie</strong>, <strong class="strong_hobbies">voyager</strong>, la <strong class="strong_hobbies">domotique/bricolage</strong> et tout ce qui tourne autour de la <strong class="strong_hobbies">technologie</strong></p>   
                                 </div>
                             </div>
                             
