@@ -61,6 +61,45 @@ body{
     padding-left: 10%;
    
 }
+/* animation glass paragraphe carte 2 */
+.animate-box{
+    perspective: 2000px;
+    perspective-origin: top;
+}
+.animate-box:hover .card-box-animate{
+    transform: rotateY(180deg);
+}
+
+.card-box-animate{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.86,0,0.07,1);
+}
+
+.animate-card-front, .animate-card-back{
+    height: fit-content;
+    width: fit-content;
+}
+.animate-card-front{
+     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.animate-card-back{
+    position: absolute;
+    top: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.animate-card-back h2{
+    font-family: var(--title-font);
+    padding-bottom: 1rem;
+}
+
+.strong_hobbies{
+    color: #ffde7c;
+}
 
 #quatre .mid-section{
     text-align: center;
@@ -219,7 +258,7 @@ header h2{
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(5px);
     box-shadow: 0 0 2px #F1FAFD;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     padding: 1em;
     line-height: 1.1;
 }
