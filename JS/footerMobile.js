@@ -8,6 +8,7 @@ const footerMobile = {
         window.addEventListener('resize', footerMobile.widthScreen);
         // Vérifier la largeur de l'écran au démarrage de l'application
         footerMobile.widthScreen();
+
     },
 
     widthScreen: function(){
@@ -32,7 +33,8 @@ const footerMobile = {
                 existingParagraph.remove();
             }
         }
-    }
+    },
+
 }
 
 export default footerMobile;

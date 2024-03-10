@@ -89,7 +89,7 @@ function showErrors($fieldName, $errorList = null) {
     return $errors;
 }
 
-//TODO <?= $_POST['title'] ?? $pokemon->getTitle() EN VALUE 
+ 
 ?>
 
 
@@ -99,10 +99,10 @@ function showErrors($fieldName, $errorList = null) {
                         <h3>Contact</h3>
                     </div>
                     <section class="mid-section">
-                        <p class="contact-text  <?php if (isset($styleAlert) && $styleAlert === true) {echo "red_text";} elseif (isset($styleValidate) && $styleValidate === true) {echo "green_text";} else {echo '';} ?>"><?= $textContent1 ?></p>
-                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                        <p class="contact-text <?php if (isset($styleAlert) && $styleAlert === true) {echo "red_text";} elseif (isset($styleValidate) && $styleValidate === true) {echo "green_text";} else {echo '';} ?>"><?= $textContent1 ?></p>
+                        <script class="hidden-mobile" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
-                        <dotlottie-player src="https://lottie.host/1543f523-0bf1-4b91-b03b-7b5f5ebf7e95/CwMZf45UQa.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                        <dotlottie-player class="hidden-mobile" s src="https://lottie.host/1543f523-0bf1-4b91-b03b-7b5f5ebf7e95/CwMZf45UQa.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
                        <p class="contact-text"><?= $textContent2 ?></p>
                     </section>
 
@@ -133,8 +133,6 @@ function showErrors($fieldName, $errorList = null) {
                                         </label>
                                     </div>
                                     <button type="submit" id="submit" name="submit">Envoyer</button> 
-
-
                             </form>
                         </div>
                     </section>

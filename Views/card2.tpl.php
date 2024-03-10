@@ -8,13 +8,14 @@
                                 <div class="glass__paragraphe animate-card-front"><p>Après une décennie passée dans le secteur de la logistique, j'ai décidé de me réorienter vers l'informatique, un domaine qui me passionne.</p>
                                 <p>Suite à un bilan de compétences visant à valider mon choix, j'ai entamé une <strong class="strong_presentation">formation de développeur web et web mobile</strong> au sein de l'école O'clock.</p>
                                 <p>Actuellement, je suis à la <strong class="strong_presentation">recherche</strong> d'une opportunité d'<strong class="strong_presentation">alternance</strong>
-                                à partir d'octobre 2024 dans le cadre de la formation de <strong class="strong_presentation">Concepteur Développeur d'Applications</strong>, toujours au sein de l'école O'clock.</p>
+                                à partir d'octobre 2024 dans le cadre de la formation de <strong class="strong_presentation">Concepteur Développeur d'Applications</strong>.</p>
                                 </div>
                                 <div class="glass__paragraphe animate-card-back">
                                     <h2>Qui suis-je ?</h2>
                                     <p>Que ce soit dans un contexte professionnel ou personnel, je suis quelqu'un de <strong class="strong_presentation">curieux</strong> qui adore apprendre de nouvelles choses.</p>
-                                    <p> De nature <strong class="strong_presentation">calme</strong> et <strong class="strong_presentation">positive</strong>, je suis autant à l'aise à travailler en <strong class="strong_presentation">équipe</strong> qu'en <strong class="strong_presentation">autonomie</strong>.</p>
-                                    <p>En dehors du contexte professionnel, j'aime essentiellement la <strong class="strong_hobbies">photographie</strong>, <strong class="strong_hobbies">voyager</strong>, la <strong class="strong_hobbies">domotique/bricolage</strong> et tout ce qui tourne autour de la <strong class="strong_hobbies">technologie</strong></p>   
+                                    <p> Je suis plutôt <strong class="strong_presentation">calme</strong> et <strong class="strong_presentation">optimiste</strong>, prêt à relever les missions qui me seront confiées !</p>
+                                    <p>Grâce à mes expériences professionnelles, j’ai pu développer mon <strong class="strong_presentation">adaptabilité</strong> en travaillant autant <strong class="strong_presentation">seul</strong> qu’en <strong class="strong_presentation">équipe</strong>.</p>
+                                    <p>En dehors du contexte professionnel, j'aime essentiellement la <strong class="strong_hobbies">photographie</strong>, <strong class="strong_hobbies">voyager</strong>, la <strong class="strong_hobbies">domotique/bricolage</strong> et tout ce qui tourne autour de la <strong class="strong_hobbies">technologie</strong>.</p>   
                                 </div>
                             </div>
                             
