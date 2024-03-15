@@ -13,7 +13,7 @@ body{
 .card-box {
     /* background-color: darkslategray; */
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,8 +22,9 @@ body{
 
 .cards-container {
     display: flex;
-    flex-direction: row;
-    width: 400vw;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
    background-color: var(--main-color);
@@ -34,16 +35,16 @@ body{
     height: 100vw;
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* pour ie et mozilla */
-    -ms-overlow-style: none;
-    scrollbar-width: none;
+    /* -ms-overlow-style: none; */
+    /* scrollbar-width: none; */
   
 }
 
 .card{
     padding: 1px;
-    height: 80%;
+    height: 90%;
     width: 90%;
     border-radius: 60px;
     box-shadow: 0 0 20px black;
@@ -65,13 +66,11 @@ body{
     align-items: center;
 }
 
-.label-fixed{
+.label-fixed {
     position: absolute;
-    left: 0;
-    top: 41vh;
-    text-orientation: upright;
-    writing-mode: vertical-lr;
-    transform: translateY(-50%);
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
 }
 .label-fixed h3{
     font-family: var(--title-font);
@@ -79,9 +78,9 @@ body{
     background-color: #FFD60A;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 0.8rem;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    font-size: 1rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     padding: 0.5rem;
    
 }
