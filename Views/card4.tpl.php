@@ -135,6 +135,9 @@ function showErrors($fieldName, $errorList = null) {
                                     <button type="submit" id="submit" name="submit">Envoyer</button> 
                             </form>
                         </div>
+                        <aside class="message-form-mobile <?php if (isset($styleAlert) && $styleAlert === true) {echo 'visibility-message-form-mobile';} ?>" >
+                            <p class="contact-text <?php if (isset($styleAlert) && $styleAlert === true) {echo "red_text";} elseif (isset($styleValidate) && $styleValidate === true) {echo "green_text";} else {echo '';} ?>"><?= $textContent1 ?></p>
+                        </aside>
                     </section>
                 </div>
             </div>

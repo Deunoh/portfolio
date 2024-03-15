@@ -28,7 +28,7 @@
                             </div>
                         </section>
                         <aside class="cv-container">
-                            <a href="../img/projects/CV.pdf" class="cv-img-link" target='_blank'>
+                            <a href="../img/projects/CV.pdf" class="cv-img-link" target='_blank' aria-label="image imprimable du CV">
                                 <img class="cv-img" src="img/cv-img.png" alt="CV">
                             </a>
                             

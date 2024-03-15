@@ -2,6 +2,8 @@ const footerMobile = {
     footerElem: null, // Ajout d'une propriété pour stocker l'élément du footer
 
     init: function(){
+        //je selectionne le formulaire
+        footerMobile.form = document.querySelector('form');
         // Sélectionner le footer
         footerMobile.footerElem = document.querySelector('footer');
         // Initialiser l'écouteur d'événements de redimensionnement
@@ -16,6 +18,11 @@ const footerMobile = {
         const existingParagraph = footerMobile.footerElem.querySelector('.footer-paragraphe');
         // Si la largeur de l'écran est inférieure ou égale à 950 pixels
         if(window.innerWidth <= 950){
+           const asideFormMobile = document.querySelector('.formulaire-section aside');
+           footerMobile.form.addEventListener('submit', function (event){
+                asideFormMobile.hidden = false;
+           })
+
              //Je selectionne la div swipe
             footerMobile.swipeElem = document.querySelector('.swipe-logo');
             setTimeout(() => {footerMobile.swipeElem.hidden = false}, 5000);
