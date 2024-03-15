@@ -361,6 +361,9 @@ header h2{
 }
 
 /* formulaire */
+.message-form-mobile p{
+    display: none;
+}
 button{
     color: #000;
 }
