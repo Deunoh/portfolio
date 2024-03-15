@@ -2,6 +2,9 @@ const footerMobile = {
     footerElem: null, // Ajout d'une propriété pour stocker l'élément du footer
 
     init: function(){
+         //Je selectionne la div swipe
+        footerMobile.swipeElem = document.querySelector('.swipe-logo');
+        footerMobile.swipeElem.hidden = true
         //je selectionne le formulaire
         footerMobile.form = document.querySelector('form');
         // Sélectionner le footer
@@ -18,32 +21,14 @@ const footerMobile = {
         const existingParagraph = footerMobile.footerElem.querySelector('.footer-paragraphe');
         // Si la largeur de l'écran est inférieure ou égale à 950 pixels
         if(window.innerWidth <= 950){
-           const asideFormMobile = document.querySelector('.formulaire-section aside');
-           footerMobile.form.addEventListener('submit', function (event){
-                asideFormMobile.hidden = false;
-           })
-
-             //Je selectionne la div swipe
-            footerMobile.swipeElem = document.querySelector('.swipe-logo');
             setTimeout(() => {footerMobile.swipeElem.hidden = false}, 5000);
-            // Si le paragraphe n'existe pas déjà, le créer
-            if(!existingParagraph){
-                const footerParagraphe = document.createElement('p');
-                footerParagraphe.classList.add('footer-paragraphe');
-                footerParagraphe.textContent = 'Site complet disponible sur ordinateur !';
-                footerMobile.footerElem.appendChild(footerParagraphe);
-            }
-        } else {
-            // Si la largeur de l'écran dépasse 950 pixels et que le paragraphe existe, le supprimer
-            if(existingParagraph){
-                footerMobile.swipeElem.hidden = true;
-                existingParagraph.remove();
-            }
-        }
+           }else{
+            footerMobile.swipeElem.hidden = true
+           }
+            
     },
 
 }
-
 export default footerMobile;
 
 

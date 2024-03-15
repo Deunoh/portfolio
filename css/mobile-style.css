@@ -95,6 +95,15 @@ body{
     display: flex;
     flex-direction: column;
 }
+.info-content-mobile {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2vw;
+    font-family: var(--paragraphe-font);
+}
+
 
 .swipe-logo{
     width: fit-content;
