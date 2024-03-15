@@ -138,6 +138,9 @@ body{
     display: flex;
     flex-direction: column;
 }
+.info-content-mobile{
+    display: none;
+}
 
 .one__img__profile{
     width: 15%;
