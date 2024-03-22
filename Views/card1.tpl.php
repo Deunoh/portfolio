@@ -20,6 +20,7 @@
                             <ul>
                                 <li><span><img src="img/php-logo.png" alt="logo html" class="logo-techno"></span>PHP</li>
                                 <li><span><img src="img/mysql-logo.png" alt="logo html" class="logo-techno"></span>MySQL</li>
+                                <li><span><img src="img/api-logo.png" alt="logo html" class="logo-techno"></span>API Rest</li>
                               
                             </ul>
                         </div>
@@ -27,6 +28,7 @@
                             <h3 class="title-techno">Autres</h3>
                             <ul>
                                 <li><span><img src="img/github-logo.png" alt="logo html" class="logo-techno"></span>GitHub et Git</li>
+                                <li><span><img src="img/wordpress-logo.png" alt="logo html" class="logo-techno"></span>WordPress</li>
                                 <li><span><img src="img/figma.png" alt="logo html" class="logo-techno"></span>Figma</li>
                                
                             </ul>
