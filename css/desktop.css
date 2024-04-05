@@ -525,6 +525,7 @@ footer a {
     background-color: #535456;
     border: none;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 
