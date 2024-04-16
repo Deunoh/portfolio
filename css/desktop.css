@@ -496,14 +496,14 @@ input::placeholder{
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .projects__img{
     width: 20vw;
     transition: transform .2s;
 }
 .projects__img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* Footer */

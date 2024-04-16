@@ -18,6 +18,7 @@
                     <section class="right_section_projects">
                         <div class="projects-box">
                             <a href="https://github.com/Deunoh/homepage-liegeois" class="img-link" target="_blank"><img src="img/projects/promoliegeois.png" alt="projet promoliegeois" class="projects__img"></a>
+                            <a href="https://github.com/Deunoh/ne_m-insulte_pas" class="img-link" target="_blank"><img src="img/projects/ne_m-insulte_pas.png" alt="projet React Ne m'insulte pas" class="projects__img"></a>
                             <a href="#" class="img-link"><img src="img/projects/portfolio.png" alt="image portfolio" class="projects__img"></a>
                         </div>
                     </section>

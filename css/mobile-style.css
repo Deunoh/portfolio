@@ -491,8 +491,10 @@ input::placeholder{
 
 .right_section_projects{
     width: 100%;
-    
+    margin-top: 2rem;
+    height: 90%;
 }
+
 .projects-box{
     height: 100%;
     display: flex;
