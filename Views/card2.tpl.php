@@ -9,6 +9,7 @@
                                 <p>Suite à un bilan de compétences visant à valider mon choix, j'ai entamé une <strong class="strong_presentation">formation de développeur web et web mobile</strong> au sein de l'école O'clock.</p>
                                 <p>Actuellement, je suis à la <strong class="strong_presentation">recherche</strong> d'une opportunité d'<strong class="strong_presentation">alternance</strong>
                                 à partir d'octobre 2024 dans le cadre de la formation de <strong class="strong_presentation">Concepteur Développeur d'Applications</strong>.</p>
+                                <p>Je suis également ouvert à tout type de <strong class="strong_presentation">proposition professionnelle</strong>.</p>
                                 </div>
                                 <div class="glass__paragraphe animate-card-back">
                                     <h2>Qui suis-je ?</h2>
