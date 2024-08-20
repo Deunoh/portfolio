@@ -27,7 +27,7 @@ $projects = [
         <section class="section_projects custom-animate-card-front">
             <div class="projects-box">
                 <?php foreach ($projects as $project): ?>
-                    <a href="<?php echo $project['link']; ?>" class="img-link" target="_blank">
+                    <a href="#" class="img-link" target="_blank">
                         <img src="<?php echo $project['image']; ?>" alt="<?php echo $project['alt']; ?>" class="projects__img">
                     </a>
                 <?php endforeach; ?>
@@ -44,3 +44,4 @@ $projects = [
     </div>
 </div>
 
+<!-- Il faut supprimer les liens dans le front de la carte, ajouter les liens github et lien vers le site dans le tableau puis dynamisé le back de la carte -->

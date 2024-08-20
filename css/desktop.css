@@ -546,7 +546,11 @@ footer a {
     perspective-origin: top;
 }
 
-.custom-animate-box:hover .custom-card-box-animate {
+/* .custom-animate-box:hover .custom-card-box-animate {
+    transform: rotateY(180deg);
+} */
+
+.flipped-card{
     transform: rotateY(180deg);
 }
 

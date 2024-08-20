@@ -4,7 +4,7 @@ const animationCard = {
     const projectLinks = document.querySelectorAll('.img-link');
     
     // Sélectionner la div à laquelle ajouter la classe
-    const cardBox = document.querySelector('.card-box-animate-three');
+    const cardBox = document.querySelector('.custom-card-box-animate');
     
     // Ajouter un écouteur d'événements pour chaque lien
     projectLinks.forEach(function (link) {
@@ -14,11 +14,6 @@ const animationCard = {
         
         // Ajouter la classe 'flipped-card' à la div
         cardBox.classList.add('flipped-card');
-        
-        // Optionnel : ouvrir le lien dans un nouvel onglet après l'animation
-        setTimeout(function () {
-          window.open(link.href, '_blank');
-        }, 500); // délai en millisecondes, ajustez selon la durée de votre animation
       });
     });
   }
