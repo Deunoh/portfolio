@@ -487,25 +487,36 @@ input::placeholder{
 }
 /* Troisième carte */
 
-.right_section_projects{
-    width: 60%;
+.section_projects{
+    width: 100%;
     
 }
 .projects-box{
-    height: 100%;
+    padding: 4rem;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.img-link{
+    width: 32%;
+    height: 30%;
 }
 .projects__img{
-    width: 20vw;
+    width: 100%;
+    height: 100%;
     transition: transform .2s;
 }
 .projects__img:hover{
     transform: scale(1.1);
 }
+.projects-box-detail{
+    display: flex;
 
+}
+.project-img-detail{
+    width: 50%;
+}
 /* Footer */
 
 footer{
@@ -527,5 +538,42 @@ footer a {
     cursor: pointer;
     transition: 0.3s;
 }
+
+/* Animation carte 3 */
+
+.custom-animate-box {
+    perspective: 2000px;
+    perspective-origin: top;
+}
+
+.custom-animate-box:hover .custom-card-box-animate {
+    transform: rotateY(180deg);
+}
+
+.custom-card-box-animate {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.86,0,0.07,1);
+}
+
+.custom-animate-card-front, .custom-animate-card-back {
+    height: fit-content;
+    width: fit-content;
+}
+
+.custom-animate-card-front {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.custom-animate-card-back {
+    position: absolute;
+    top: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+
 
 

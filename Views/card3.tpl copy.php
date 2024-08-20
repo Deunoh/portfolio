@@ -19,12 +19,12 @@ $projects = [
 ];
 ?>
 
-<div class="card-box custom-animate-box" id="trois">
-    <div class="card three custom-card-box-animate">
+<div class="card-box animate-box" id="trois">
+    <div class="card three card-box-animate">
         <div class="label-fixed">
             <h3>Projets</h3>
         </div>
-        <section class="section_projects custom-animate-card-front">
+        <section class="section_projects animate-card-front">
             <div class="projects-box">
                 <?php foreach ($projects as $project): ?>
                     <a href="<?php echo $project['link']; ?>" class="img-link" target="_blank">
@@ -33,7 +33,7 @@ $projects = [
                 <?php endforeach; ?>
             </div>
         </section>
-        <section class="section_projects custom-animate-card-back">
+        <section class="section_projects animate-card-back">
             <div class="projects-box-detail">
                <img class="project-img-detail" src="img/projects/promoliegeois.png" alt="projet promoliegeois">
                <div class="glass__paragraphe">
@@ -43,4 +43,3 @@ $projects = [
         </section>
     </div>
 </div>
-
