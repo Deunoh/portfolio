@@ -11,7 +11,7 @@
                             <ul>
                                 <li><span><img src="img/html-logo.png" alt="logo html" class="logo-techno"></span>HTML</li>
                                 <li><span><img src="img/css-logo.png" alt="logo html" class="logo-techno"></span>CSS</li>
-                                <li><span><img src="img/js-logo.png" alt="logo html" class="logo-techno"></span>Javascript</li>
+                                <li><span><img src="img/javascript-logo.png" alt="logo html" class="logo-techno"></span>Javascript</li>
                                 <li><span><img src="img/react-logo.png" alt="logo html" class="logo-techno"></span>React</li>
                             </ul>
                         </div>
@@ -19,7 +19,7 @@
                             <h3 class="title-techno">Back</h3>
                             <ul>
                                 <li><span><img src="img/php-logo.png" alt="logo html" class="logo-techno"></span>PHP</li>
-                                <li><span><img src="img/file_type_symfony_icon_130133.png" alt="logo html" class="logo-techno"></span>Symfony</li>
+                                <li><span><img src="img/symfony-logo.png" alt="logo html" class="logo-techno"></span>Symfony</li>
                                 <li><span><img src="img/mysql-logo.png" alt="logo html" class="logo-techno"></span>MySQL</li>
                                 <li><span><img src="img/api-logo.png" alt="logo html" class="logo-techno"></span>API Rest</li>
                               
