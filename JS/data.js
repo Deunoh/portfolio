@@ -5,7 +5,7 @@ export const projects = [
       github: 'https://github.com/Deunoh/homepage-liegeois',
       image: 'img/projects/promoliegeois.png',
       alt: 'projet promoliegeois',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic magni inventore aut repudiandae quas assumenda tempora molestiae expedita perspiciatis ducimus, beatae ipsam vel corporis commodi asperiores eius dicta laboriosam distinctio in dolores nobis sed! Provident minima excepturi a totam sunt aperiam nisi consectetur iusto molestias nobis repudiandae, suscipit, facilis magnam?',
+      description: 'Mon premier site ! Realisé peu avant le début de ma formation, ce site à pour but de regrouper tous les liens nécessaires pour suivre la formation développeur web et web mobile au sein de l\'école O\'clock. Il y a possibilité de changer le fond d\écran grâce à l\'API d\'unsplash puis le sauvegardé pour la prochaine visite avec le petit appareil photo. En bref ce site m\'a permis de mettre en pratique mes petites connaissances en html css et javascript appris en autodidacte.',
       technos: ['html', 'jquery', 'php']
   },
   {
@@ -14,7 +14,7 @@ export const projects = [
       github: 'https://github.com/Deunoh/ne_m-insulte_pas',
       image: 'img/projects/ne_m-insulte_pas.png',
       alt: 'projet React Ne m\'insulte pas',
-      description: 'Description du projet ne m\'insulte pas',
+      description: 'Mini projet codé en 1 journée me permettant de comprendre et mettre en oeuvre les champs contrôlés en React.',
       technos: ['react']
   },
   {
@@ -23,7 +23,25 @@ export const projects = [
       github: 'https://github.com/Deunoh/portfolio',
       image: 'img/projects/portfolio.png',
       alt: 'image portfolio',
-      description: 'Desciption du projet portfolio',
+      description: 'Ce portfolio à été réalisé en début de formation, la conception du site en défilement latéral est un défi que je me suis lancé, que ce soit au niveau du code mais aussi sur la conception de la maquette. Développé en \'desktop first\', une version mobile arrive prochainement. Le code de ce portfolio est loin de mes capacités actuelles mais il m\à permis de progresser !',
       technos: ['html', 'javascript', 'php']
+  },
+  {
+    title: 'Calculator JavaScript',
+    link: 'https://deunoh.github.io/calculator-JS/',
+    github: 'https://github.com/Deunoh/calculator-JS',
+    image: 'img/projects/calculator-screen.png',
+    alt: 'image calculator',
+    description: 'Défi que je me suis lancé de créer une calculatrice en JavaScript en 45mn. Je me suis inspiré de la calculatrice d\'ios',
+    technos: ['javascript']
+  },
+  {
+    title: 'Apo\'calypse',
+    link: 'https://apocalypse.denovann.fr/',
+    github: 'https://github.com/Deunoh?tab=repositories&q=apocalypse',
+    image: 'img/projects/apocalypse-screen.png',
+    alt: 'image apocalypse',
+    description: "Projet de fin de formation présenté devant un jury en vue de l’obtention du titre professionnel DWWM. Nous disposions d’un mois pour réaliser ce projet en équipe, depuis la conception jusqu’à la mise en ligne. Nous avons adopté la méthodologie Agile Scrum pour respecter les délais. Ce site collaboratif, destiné aux survivants d'une apocalypse zombie, aide la population à survivre grâce à une carte interactive, des articles, et des avis de recherche pour retrouver les disparus. Le contenu est modéré et géré via un back office par les administrateurs. Ce projet m’a permis de travailler en conditions réelles et d’approfondir mes compétences en équipe.",
+    technos: ['react', 'redux', 'symfony']
   },
 ];
