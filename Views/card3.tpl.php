@@ -63,5 +63,3 @@
     </div>
 </div>
 
-
-<!-- Il faut supprimer les liens dans le front de la carte, ajouter les liens github et lien vers le site dans le tableau puis dynamisé le back de la carte -->

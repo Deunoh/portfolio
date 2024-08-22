@@ -9,6 +9,7 @@ const projectsModule = {
     const projectTechnos = document.getElementById('project-technos');
     const websiteLink = document.getElementById('website-link');
     const githubLink = document.getElementById('github-link');
+    const projectsLinksDiv = document.querySelector('.projects-links');
     
     projects.forEach(project => {
       // Créer le lien pour l'image
@@ -37,7 +38,7 @@ const projectsModule = {
         projectDetailImg.src = project.image;
         projectDetailImg.alt = project.alt;
         projectDetailTitle.textContent = project.title;
-        projectDetailDescription.textContent = project.description;
+        projectDetailDescription.innerHTML = project.description;
 
         // Vider les technologies précédentes
         projectTechnos.innerHTML = '';
@@ -52,9 +53,16 @@ const projectsModule = {
           projectTechnos.appendChild(imgTechno);
         });
 
-        // Mettre à jour les liens Website et GitHub
-        websiteLink.href = project.link;
-        githubLink.href = project.github;
+        // Vérifier si les deux liens sont présents
+        if (project.link && project.github) {
+          // Si les deux liens existent, on met à jour les href et on affiche la div
+          websiteLink.href = project.link;
+          githubLink.href = project.github;
+          projectsLinksDiv.style.display = 'block';
+        } else {
+          // Si l'un ou les deux liens sont absents, on cache la div
+          projectsLinksDiv.style.display = 'none';
+        }
       });
     });
   }
