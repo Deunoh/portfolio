@@ -1,0 +1,10 @@
+body{
+  background: no-repeat center url('../img/underconstruc\ -\ Copie.jpg');
+  background-size: cover;
+}
+footer{
+  display: none;
+}
+.main-container{
+  display: none;
+}
