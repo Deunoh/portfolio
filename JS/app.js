@@ -3,6 +3,7 @@ import cursor from "./cursor.js";
 import mobile from "./mobile.js";
 import animationCard from "./animateCard.js";
 import projectsModule from "./projectsModule.js";
+import alert from "./alert.js";
 
 const app = {
   init: function () {
@@ -11,6 +12,7 @@ const app = {
     cursor.init();
     projectsModule.init();
     animationCard.init();
+    alert.newWebSite();
   },
 };
 
