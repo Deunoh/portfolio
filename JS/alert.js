@@ -1,6 +1,10 @@
 const alert = {
   newWebSite: function (){
-    window.location.href = 'https://denovann.fr/';
+    if (confirm('Voulez-vous visiter mon nouveau portfolio ?')) {
+      window.location.href = 'https://denovann.fr/';
+    } else {
+      console.log('Redirection annulée.');
+    }
   }
 }
 
