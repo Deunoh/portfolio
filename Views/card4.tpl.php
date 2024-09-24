@@ -36,7 +36,7 @@ if(!empty($_POST)){
 
     // Si aucune erreur n'est détectée, traiter le formulaire (envoi d'email, etc.)
     if(empty($errorList)) {
-        $to = "denovann@live.fr";
+        $to = "denovann.belloir@oclock.school";
         $subject = "Nouveau message du formulaire de contact";
         $messageBody = "Nom: " . utf8_encode($name) . "\n";
         $messageBody .= "Prenom: $firstname\n";
